@@ -20,6 +20,17 @@ if (preloader) {
     });
 }
 
+const navbar = document.querySelector('.nav-menu');
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+
 
 let menuBtn = document.querySelector('.header-menu-toggle');
 let menuHero = document.querySelector('.header-nav');
