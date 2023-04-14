@@ -3,7 +3,7 @@ $color_primary: #06a3da
 $color_secondary: #f57e57
 $color_light: #eef9ff
 $color_dark: #091e3e
-$carousel-bg : "../img/bg-carousel.jpg"
+$carousel-bg: "/img/global-connections-background-social-media-banner.jpg"
 $backgroundonline: '/img/online.jpg'
 $backgroundistanbul: '/img/istanbul.jpg'
 $backgroundankara: '/img/ankara.jpg'
@@ -293,6 +293,16 @@ html
                             color: #FFFFFF
 .carousel-flickity
     .main-carousel
+        height: 100vh
+        .carousel-cell
+            width: 100%
+            height: 100%
+            background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url($carousel-bg) center center no-repeat
+            background-size: cover
+            .caro-text
+                margin: 0
+                padding: 0
+                font-size: 2rem
         .flickity-button
             background: #333
             &:hover
