@@ -457,7 +457,6 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   -o-object-fit: cover;
      object-fit: cover;
   visibility: visible;
-  animation-delay: 0.9s;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -480,6 +479,10 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 .first {
   height: 420px;
   padding-bottom: 20px;
+}
+
+.second {
+  margin-bottom: 10px;
 }
 
 .white {
