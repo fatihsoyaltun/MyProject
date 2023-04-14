@@ -647,20 +647,43 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   border-color: #091e3e !important;
 }
 
+.bg-darks {
+  background-color: #091e3e !important;
+}
+
 .footer-bottom-container {
   margin-top: -75px;
   visibility: visible;
 }
-.footer-bottom-container a i {
+.footer-bottom-container a i, .footer-bottom-container p i {
   color: #06a3da !important;
 }
+.footer-bottom-container .btn-lg-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #06a3da;
+  border: 1px solid #06a3da;
+  border-radius: 2px;
+}
+.footer-bottom-container .btn-lg-square i {
+  color: white !important;
+}
+.footer-bottom-container .btn-lg-square:hover {
+  background-color: #f57e57;
+  border: 1px solid #f57e57;
+}
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1440px) {
   nav .menu-item a {
     padding: 34px 10px 0 !important;
   }
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 992px) {
   .res-menu-active {
     display: none;
   }
