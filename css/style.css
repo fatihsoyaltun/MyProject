@@ -480,6 +480,14 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   font-family: "Jost", sans-serif;
 }
 
+.text-primary {
+  color: #06a3da !important;
+}
+
+.bg-light {
+  background-color: #eef9ff !important;
+}
+
 .cols {
   width: 100%;
   height: 100%;
@@ -497,6 +505,11 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 .white {
   color: white;
   opacity: 0.8;
+}
+
+.hero-header {
+  background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url("/img/aerial-view-business-team.jpg") center center no-repeat;
+  background-size: cover;
 }
 
 .online {
