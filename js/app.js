@@ -21,12 +21,15 @@ if (preloader) {
 }
 
 const navbar = document.querySelector('.nav-menu');
+const logo = document.querySelector('.neos-logo');
 
 window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 100) {
         navbar.classList.add('scrolled');
+        logo.src="/img/neos.PNG";
     } else {
         navbar.classList.remove('scrolled');
+        logo.src="/img/neosLogo2.png"
     }
 });
 
@@ -47,11 +50,33 @@ menuCloseBtn.addEventListener('click', () => {
     menuContent.classList.remove('menu-is-open');
 });
 
+$('.owlTwo').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false,
+        }
+    }
+})
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
-    doots: false,
+    dots: false,
     responsive: {
         0: {
             items: 1
@@ -81,3 +106,22 @@ for (let i = 0; i < clip.length; i++) {
         clip[i].style.opacity = 1;
     });
 };
+
+// jQuery(function ($){
+//     $('.caro-text').textillate({
+//         loop : true,
+//         autoplay : true,
+//         minDisplayTime:3000,
+//         initialDelay: 1000,
+//         in: {
+//             effect :"fadeInDown",
+//             delayScale : 3,
+//             shuffle: true,
+//         },
+//         out: {
+//             effect :"rollOut",
+//             delayScale : 3,
+//             reverse: true,
+//         }
+//     })
+// })
