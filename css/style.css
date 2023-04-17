@@ -570,7 +570,11 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.blogs .blog-list {
+.blogs .blogs_content_left {
+  position: sticky;
+  top: 100px;
+}
+.blogs .blogs_content_left .blog-list {
   border: none;
   overflow: hidden !important;
   width: 250px;
@@ -578,16 +582,19 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   justify-content: center;
   transition: 0;
 }
-.blogs .blog-list .nav-pills {
-  background-color: red !important;
-}
-.blogs .blog-list p {
+.blogs .blogs_content_left .blog-list p {
   text-transform: uppercase !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   width: 250px;
   margin-bottom: 0;
+}
+.blogs .blogs_content_left .nav-link.active {
+  background-color: #06a3da !important;
+}
+.blogs .blogs_content_right {
+  border-left: 2px solid rgba(238, 238, 238, 0.9333333333);
 }
 
 .blogs_cards {
