@@ -46,7 +46,7 @@
         <div>E</div>
         <div>N</div>
     </div>
-    <div class="container-fluid d-none d-lg-block bg-light p-0">
+    <!-- <div class="container-fluid d-none d-lg-block bg-light p-0">
         <div class="row">
             <div class="col-md-4 animate__animated animate__rotateInDownLeft p-0">
                 <div class="header-up-left d-inline-flex align-items-center ms-2 gap-1">
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <header class="header">
         <nav class="nav-menu">
             <a class="animate__animated animate__zoomIn" href="./index.html"><img src="./img/neos.PNG" alt=""
@@ -160,7 +160,7 @@
     </header>
 
     <div class="container-fluid bg-primary py-5 hero-header mb-5">
-        <div class="row py-3">
+        <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-3 text-white fw-bold">Neos Yazılım Akademi Blog</h1>
                 <div class="d-flex justify-content-center align-items-center">
@@ -185,63 +185,104 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="section-title mb-2">
-                    <h5 class="h5bluehead">Bloglar</h5>
+                    <h5 class="h5bluehead">Blog Yazıları</h5>
                 </div>
             </div>
             <hr>
-            <div class="d-flex align-items-start blogs"> 
-                <div class="nav flex-column nav-pills me-3 col-3 border-end px-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
-                    <button class="nav-link active" id="v-pills-kayitol-tab" data-bs-toggle="pill"
+            <div class="d-flex align-items-start blogs">
+                <div class="nav flex-column align-items-center nav-pills me-3 col-3 border-end px-3" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <!-- Blog Başlıkları Sol Menü -->
+                    <button class="nav-link active blog-list" id="v-pills-kayitol-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-kayitol" type="button" role="tab" aria-controls="v-pills-kayitol"
-                        aria-selected="true">Kayıt Ol
+                        aria-selected="true">
+                        <p>
+                            Kayıt Ol
+                        </p>
                     </button>
 
-                    <button class="nav-link" id="v-pills-girisyap-tab" data-bs-toggle="pill"
+                    <button class="nav-link blog-list" id="v-pills-girisyap-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-girisyap" type="button" role="tab" aria-controls="v-pills-girisyap"
-                        aria-selected="false">Giriş Yap
+                        aria-selected="false">
+                        <p>
+                            Giriş Yap
+                        </p>
                     </button>
 
-                    <button class="nav-link" id="v-pills-anasayfa-tab" data-bs-toggle="pill"
+                    <button class="nav-link blog-list" id="v-pills-anasayfa-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-anasayfa" type="button" role="tab" aria-controls="v-pills-anasayfa"
-                        aria-selected="false">Anasayfa
+                        aria-selected="false">
+                        <p>
+                            Anasayfa
+                        </p>
                     </button>
 
-                    <button class="nav-link" id="v-pills-blog1-tab" data-bs-toggle="pill"
+                    <button class="nav-link blog-list" id="v-pills-blog1-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-blog1" type="button" role="tab" aria-controls="v-pills-blog1"
-                        aria-selected="false">Yazılım Eğitimi</button>
+                        aria-selected="false" style="width:250px; overflow: hidden;">
+                        <p>
+                            Yazılım Eğitimleri</p>
+                    </button>
+
+                    <button class="nav-link blog-list" id="v-pills-blog2-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-blog2" type="button" role="tab" aria-controls="v-pills-blog2"
+                        aria-selected="false" >
+                        <p>
+                            Nedir Bu javasvrip?</p>
+                    </button>
+
+                    <button class="nav-link blog-list" id="v-pills-blog3-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-blog3" type="button" role="tab" aria-controls="v-pills-blog3"
+                    aria-selected="false">
+                    <p>
+                        YAZILIM EĞITIMINDE YÜZ YÜZE MI ONLINE MI TERCIH EDILMELIDIR?
+                    </p>
+                    </button>
                 </div>
-                <div class="tab-content col-9" id="v-pills-tabContent">
+
+                <div class="tab-content col-8 ms-4 mt-5 mb-5" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-kayitol" role="tabpanel"
                         aria-labelledby="v-pills-kayitol-tab" tabindex="0">KAYIT ALANI
                     </div>
 
-                    <div class="tab-pane fade" id="v-pills-girisyap" role="tabpanel" aria-labelledby="v-pills-girisyap-tab"
-                        tabindex="0">GİRİŞ ALANI
+                    <div class="tab-pane fade" id="v-pills-girisyap" role="tabpanel"
+                        aria-labelledby="v-pills-girisyap-tab" tabindex="0">GİRİŞ ALANI
                     </div>
 
-                    <div class="tab-pane fade" id="v-pills-anasayfa" role="tabpanel" aria-labelledby="v-pills-anasayfa-tab"
-                        tabindex="0">
+                    <div class="tab-pane fade" id="v-pills-anasayfa" role="tabpanel"
+                        aria-labelledby="v-pills-anasayfa-tab" tabindex="0">
                         <div class="container">
-                            <h2 class="h2head ms-4">ANASAYFA</h2>
+                            <h2 class="h2head">ANASAYFA</h2>
                             <div class="row mt-5">
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
                                     <div class="card blogs_cards">
-                                        <div class="blog_img" style="width: 100%;height: 150px;">
-                                            <img src="/img/blog1.jpg" alt="" class="w-100">
+                                        <div class="blog_img" style="width: 100%;height: 180px;">
+                                            <img src="/img/blog1.jpg" alt="" class="w-100 h-100">
                                         </div>
                                         <div class="user mt-4 px-3 d-flex">
-                                            <p class="text-muted"  style="font-size: 12px;">Yazar: </p>
-                                            <p class="text-muted ms-2" style="font-size: 12px;">AYHAN DURSUN ŞANLI</p>
+                                            <p class="text-muted" style="font-size: 12px;">Yazar: </p>
+                                            <p class="text-muted ms-2"
+                                                style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden">
+                                                AYHAN DURSUN ŞANLI</p>
                                         </div>
                                         <hr class="w-50 align-self-center mt-0 mb-2">
                                         <div>
-                                            <h6 class="mt-2 px-3" style="font-size: 15px;">YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN YOL</h6>
+                                            <h6 class="mt-2 px-3"
+                                                style="font-size: 15px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN YOL
+                                            </h6>
                                         </div>
                                         <div class="user_text px-3" style="height: 80px;">
-                                            <p class="" style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit modi doloremque aliquam esse nam possimus nulla, praesentium similique itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem veritatis.</p>
+                                            <p class=""
+                                                style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak
+                                                isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                                                modi doloremque aliquam esse nam possimus nulla, praesentium similique
+                                                itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus
+                                                enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem
+                                                veritatis.</p>
                                         </div>
-                                        <div class="d-flex justify-content-between px-3">
+                                        <div class="d-flex justify-content-between px-3 user_date">
                                             <a class="small" href="">Devamını Oku...</a>
                                             <p class="text-muted small">15.02.2023</p>
                                         </div>
@@ -249,21 +290,27 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
                                     <div class="card blogs_cards">
-                                        <div class="blog_img" style="width: 100%;height: 150px;">
-                                            <img src="/img/js.png" alt="" class="w-100">
+                                        <div class="blog_img" style="width: 100%;height: 180px;">
+                                            <img src="/img/js.png" alt="" class="w-100 h-100">
                                         </div>
                                         <div class="user mt-4 px-3 d-flex">
-                                            <p class="text-muted"  style="font-size: 12px;">Yazar: </p>
-                                            <p class="text-muted ms-2" style="font-size: 12px;">AYHAN DURSUN ŞANLI</p>
+                                            <p class="text-muted" style="font-size: 12px;">Yazar: </p>
+                                            <p class="text-muted ms-2"
+                                                style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden">
+                                                Ali Veli Konya</p>
                                         </div>
                                         <hr class="w-50 align-self-center mt-0 mb-2">
                                         <div>
-                                            <h6 class="mt-2 px-3" style="font-size: 15px;">NEDİR BU JAVASCRİPT?</h6>
+                                            <h6 class="mt-2 px-3"
+                                                style="font-size: 15px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                NEDIR BU JAVASCRIPT? </h6>
                                         </div>
                                         <div class="user_text px-3" style="height: 80px;">
-                                            <p class="" style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit modi doloremque aliquam esse nam possimus nulla, praesentium similique itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem veritatis.</p>
+                                            <p class=""
+                                                style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                Javascript hakkında temel bir giriş</p>
                                         </div>
-                                        <div class="d-flex justify-content-between px-3">
+                                        <div class="d-flex justify-content-between px-3 user_date">
                                             <a class="small" href="">Devamını Oku...</a>
                                             <p class="text-muted small">15.02.2023</p>
                                         </div>
@@ -271,87 +318,28 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
                                     <div class="card blogs_cards">
-                                        <div class="blog_img" style="width: 100%;height: 150px;">
-                                            <img src="/img/blog1.jpg" alt="" class="w-100">
+                                        <div class="blog_img" style="width: 100%;height: 180px;">
+                                            <img src="/img/indir.jpg22.jpg" alt="" class="w-100 h-100">
                                         </div>
                                         <div class="user mt-4 px-3 d-flex">
-                                            <p class="text-muted"  style="font-size: 12px;">Yazar: </p>
-                                            <p class="text-muted ms-2" style="font-size: 12px;">AYHAN DURSUN ŞANLI</p>
+                                            <p class="text-muted" style="font-size: 12px;">Yazar: </p>
+                                            <p class="text-muted ms-2"
+                                                style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden">
+                                                BÜŞRA</p>
                                         </div>
                                         <hr class="w-50 align-self-center mt-0 mb-2">
                                         <div>
-                                            <h6 class="mt-2 px-3" style="font-size: 15px;">YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN YOL</h6>
+                                            <h6 class="mt-2 px-3"
+                                                style="font-size: 15px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                YAZILIM EĞITIMINDE YÜZ YÜZE MI ONLINE MI TERCIH EDILMELIDIR? </h6>
                                         </div>
                                         <div class="user_text px-3" style="height: 80px;">
-                                            <p class="" style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit modi doloremque aliquam esse nam possimus nulla, praesentium similique itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem veritatis.</p>
+                                            <p class=""
+                                                style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                Unutulmamalıdır ki ister online ister yüz yüze eğitim alın her iki
+                                                durumda</p>
                                         </div>
-                                        <div class="d-flex justify-content-between px-3">
-                                            <a class="small" href="">Devamını Oku...</a>
-                                            <p class="text-muted small">15.02.2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
-                                    <div class="card blogs_cards">
-                                        <div class="blog_img" style="width: 100%;height: 150px;">
-                                            <img src="/img/blog1.jpg" alt="" class="w-100">
-                                        </div>
-                                        <div class="user mt-4 px-3 d-flex">
-                                            <p class="text-muted"  style="font-size: 12px;">Yazar: </p>
-                                            <p class="text-muted ms-2" style="font-size: 12px;">AYHAN DURSUN ŞANLI</p>
-                                        </div>
-                                        <hr class="w-50 align-self-center mt-0 mb-2">
-                                        <div>
-                                            <h6 class="mt-2 px-3" style="font-size: 15px;">YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN YOL</h6>
-                                        </div>
-                                        <div class="user_text px-3" style="height: 80px;">
-                                            <p class="" style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit modi doloremque aliquam esse nam possimus nulla, praesentium similique itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem veritatis.</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between px-3">
-                                            <a class="small" href="">Devamını Oku...</a>
-                                            <p class="text-muted small">15.02.2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
-                                    <div class="card blogs_cards">
-                                        <div class="blog_img" style="width: 100%;height: 150px;">
-                                            <img src="/img/blog1.jpg" alt="" class="w-100">
-                                        </div>
-                                        <div class="user mt-4 px-3 d-flex">
-                                            <p class="text-muted"  style="font-size: 12px;">Yazar: </p>
-                                            <p class="text-muted ms-2" style="font-size: 12px;">AYHAN DURSUN ŞANLI</p>
-                                        </div>
-                                        <hr class="w-50 align-self-center mt-0 mb-2">
-                                        <div>
-                                            <h6 class="mt-2 px-3" style="font-size: 15px;">YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN YOL</h6>
-                                        </div>
-                                        <div class="user_text px-3" style="height: 80px;">
-                                            <p class="" style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit modi doloremque aliquam esse nam possimus nulla, praesentium similique itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem veritatis.</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between px-3">
-                                            <a class="small" href="">Devamını Oku...</a>
-                                            <p class="text-muted small">15.02.2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
-                                    <div class="card blogs_cards">
-                                        <div class="blog_img" style="width: 100%;height: 150px;">
-                                            <img src="/img/blog1.jpg" alt="" class="w-100">
-                                        </div>
-                                        <div class="user mt-4 px-3 d-flex">
-                                            <p class="text-muted"  style="font-size: 12px;">Yazar: </p>
-                                            <p class="text-muted ms-2" style="font-size: 12px;">AYHAN DURSUN ŞANLI</p>
-                                        </div>
-                                        <hr class="w-50 align-self-center mt-0 mb-2">
-                                        <div>
-                                            <h6 class="mt-2 px-3" style="font-size: 15px;">YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN YOL</h6>
-                                        </div>
-                                        <div class="user_text px-3" style="height: 80px;">
-                                            <p class="" style="font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer yapmak isteyenle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit modi doloremque aliquam esse nam possimus nulla, praesentium similique itaque, nobis, cupiditate dolores dicta porro veniam alias temporibus enim quaerat quos tempora at eveniet ipsa! Labore harum aut a voluptatem veritatis.</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between px-3">
+                                        <div class="d-flex justify-content-between px-3 user_date">
                                             <a class="small" href="">Devamını Oku...</a>
                                             <p class="text-muted small">15.02.2023</p>
                                         </div>
@@ -360,9 +348,120 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="tab-pane fade" id="v-pills-blog1" role="tabpanel" aria-labelledby="v-pills-blog1-tab"
-                        tabindex="0">BLOG 1
+                        tabindex="0">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-12 d-flex flex-column align-content-center justify-content-center">
+                                    <h2 class="h2head">YAZILIM EĞITIMI VE YAZILIM KURSLARI: BAŞARILI BIR KARIYERE GIDEN
+                                        YOL</h2>
+                                    <h6 class="mt-4">Teknolojinin hızla geliştiği günümüzde, yazılım sektörü kariyer
+                                        yapmak isteyenler için cazip fırsatlar sunmaktadır. Yazılım eğitimi ve yazılım
+                                        kursları alarak, bu alandaki becerilerinizi geliştirebilir ve başarılı bir
+                                        kariyere adım atabilirsiniz. Bu makalede, yazılım eğitiminin önemini, yazılım
+                                        kurslarının size sağlayabileceği avantajları ve bu alanda başarıya ulaşmak için
+                                        izlemeniz gereken yolu ele alacağız.</h6>
+                                    <div class="mt-4 d-flex justify-content-center align-items-center"
+                                        style="height: 500px; overflow: hidden;">
+                                        <img src="/img/blog1.jpg" alt="">
+                                    </div>
+                                    <div class=" mt-4">
+                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eius?
+                                        </h5>
+                                        <br><br>
+                                        <p class="p_text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, ex!
+                                            Dolores, unde corrupti. At magnam enim cum? Laudantium alias ab, quas a enim
+                                            illo laboriosam similique perferendis aliquam? Obcaecati, accusamus ex,
+                                            corrupti pariatur labore minima totam porro qui doloribus saepe ut
+                                            voluptatibus consequuntur quasi! Voluptates cumque ipsum quisquam
+                                            repudiandae saepe.
+                                            <br><br>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis. Sunt
+                                            quasi ipsa non ex! Doloribus voluptates pariatur quis debitis delectus.
+                                            Soluta commodi hic, itaque numquam nobis et ex. Architecto laboriosam porro
+                                            sed molestias fuga accusantium tempore, praesentium blanditiis excepturi.
+                                            Omnis, nam. Nobis voluptatem repellat recusandae doloribus est dicta dolor!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="tab-pane fade" id="v-pills-blog2" role="tabpanel" aria-labelledby="v-pills-blog2-tab"
+                        tabindex="0">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-12 d-flex flex-column align-content-center justify-content-center">
+                                    <h2 class="h2head">NEDIR BU JAVASCRIPT?</h2>
+                                    <h6 class="mt-4">Javascript hakkında temel bir giriş</h6>
+                                    <div class="mt-4 d-flex justify-content-center align-items-center"
+                                        style="height: 500px; overflow: hidden;">
+                                        <img src="/img/js.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class=" mt-4">
+                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eius?
+                                        </h5>
+                                        <br><br>
+                                        <p class="p_text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, ex!
+                                            Dolores, unde corrupti. At magnam enim cum? Laudantium alias ab, quas a enim
+                                            illo laboriosam similique perferendis aliquam? Obcaecati, accusamus ex,
+                                            corrupti pariatur labore minima totam porro qui doloribus saepe ut
+                                            voluptatibus consequuntur quasi! Voluptates cumque ipsum quisquam
+                                            repudiandae saepe.
+                                            <br><br>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis. Sunt
+                                            quasi ipsa non ex! Doloribus voluptates pariatur quis debitis delectus.
+                                            Soluta commodi hic, itaque numquam nobis et ex. Architecto laboriosam porro
+                                            sed molestias fuga accusantium tempore, praesentium blanditiis excepturi.
+                                            Omnis, nam. Nobis voluptatem repellat recusandae doloribus est dicta dolor!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-blog3" role="tabpanel" aria-labelledby="v-pills-blog3-tab"
+                    tabindex="0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-column align-content-center justify-content-center">
+                                <h2 class="h2head">YAZILIM EĞITIMINDE YÜZ YÜZE MI ONLINE MI TERCIH EDILMELIDIR?
+                                </h2>
+                                <h6 class="mt-4">
+                                    Unutulmamalıdır ki ister online ister yüz yüze eğitim alın her iki durumda da katılımcı kendi öğrenmesini geliştirmede ileri derecede sorumluluk almalıdır.
+                                </h6>
+                                <div class="mt-4 d-flex justify-content-center align-items-center"
+                                    style="height: 500px; overflow: hidden;">
+                                    <img src="/img/indir.jpg22.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class=" mt-4">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eius?
+                                    </h5>
+                                    <br><br>
+                                    <p class="p_text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, ex!
+                                        Dolores, unde corrupti. At magnam enim cum? Laudantium alias ab, quas a enim
+                                        illo laboriosam similique perferendis aliquam? Obcaecati, accusamus ex,
+                                        corrupti pariatur labore minima totam porro qui doloribus saepe ut
+                                        voluptatibus consequuntur quasi! Voluptates cumque ipsum quisquam
+                                        repudiandae saepe.
+                                        <br><br>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis. Sunt
+                                        quasi ipsa non ex! Doloribus voluptates pariatur quis debitis delectus.
+                                        Soluta commodi hic, itaque numquam nobis et ex. Architecto laboriosam porro
+                                        sed molestias fuga accusantium tempore, praesentium blanditiis excepturi.
+                                        Omnis, nam. Nobis voluptatem repellat recusandae doloribus est dicta dolor!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

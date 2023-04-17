@@ -536,11 +536,37 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.blogs .blog-list {
+  border: none;
+  overflow: hidden !important;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  transition: 0;
+}
+.blogs .blog-list .nav-pills {
+  background-color: red !important;
+}
+.blogs .blog-list p {
+  text-transform: uppercase !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 250px;
+  margin-bottom: 0;
+}
+
 .blogs_cards {
+  position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   height: 400px;
   width: 280px;
+}
+.blogs_cards .user_date {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
 }
 .blogs_cards .blog_img {
   overflow: hidden;

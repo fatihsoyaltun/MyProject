@@ -473,11 +473,36 @@ html
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 
 //blog//
+.blogs
+    .blog-list
+        border: none
+        overflow: hidden !important
+        width: 250px
+        display: flex
+        justify-content: center
+        transition: 0
+        .nav-pills
+            background-color: red !important
+
+        p
+            text-transform: uppercase !important
+            text-overflow: ellipsis !important
+            white-space: nowrap !important
+            overflow: hidden !important
+            width: 250px
+            margin-bottom: 0
+
+
 .blogs_cards
+    position: relative
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
     cursor: pointer
     height: 400px
     width: 280px
+    .user_date
+        width: 100%
+        position: absolute
+        bottom: 10px
     .blog_img
         overflow: hidden
         img
