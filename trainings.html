@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neos | Anasayfa</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- AnimateCss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Loader Css -->
+    <link rel="stylesheet" href="./css/loader.css">
+    <!-- flickity CSS -->
+    <link rel="stylesheet" href="./css/flickity.min.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="load">
+        <div>S</div>
+        <div>O</div>
+        <div>E</div>
+        <div>N</div>
+    </div>
+    <div class="container-fluid d-none d-lg-block bg-light p-0">
+        <div class="row">
+            <div class="col-md-4 animate__animated animate__rotateInDownLeft p-0">
+                <div class="header-up-left d-inline-flex align-items-center ms-2 gap-1">
+                    <small class="py-2">
+                        <i class="far fa-clock text-warning"></i>
+                        Çalışma Saatleri:Her Gün 09.00 - 19.00
+                    </small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="template-choice text-center">
+                    <div class="swatch">
+                        <div class="swatch__item" style="background-color:red"></div>
+                        <div class="swatch__item" style="background-color:black"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-lg-end animate__animated animate__rotateInDownRight">
+                <div class="header-up-right d-inline-flex align-items-center gap-2">
+                    <div class="communication-email py-2 border-end pe-3">
+                        <p class="m-0">
+                            <i class="fa fa-envelope text-warning"></i>
+                            iletisim@neosyazilim.com
+                        </p>
+                    </div>
+                    <div class="communication-phone py-2">
+                        <p class="m-0">
+                            <i class="fa fa-phone text-warning"></i>
+                            (0212) 912 40 90
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="nav-menu">
+            <a class="animate__animated animate__zoomIn" href="./index.html"><img src="./img/neos.PNG" alt=""
+                    width="150"></a>
+            <nav class="res-menu-active">
+                <ul class="menu-hero">
+                    <li class="menu-item">
+                        <a class="tagHero animate__animated animate__zoomIn" href="#">Anasayfa</a>
+                    </li>
+                    <li class="menu-item drop-hero">
+                        <a class="tagHero animate__animated animate__zoomIn" href="#">Yazılım Uzmanlığı Eğitimi</a>
+                        <ul class="drop-menu">
+                            <li><a href="#">Uzaktan Eğitim</a></li>
+                            <li><a href="#">İstanbul Şube</a></li>
+                            <li><a href="#">Ankara Şube</a></li>
+                            <li><a href="#">İzmir Şube</a></li>
+                            <li><a href="#">Bursa Şube</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="tagHero animate__animated animate__zoomIn" href="#">Yorumlar</a>
+                    </li>
+                    <li class="menu-item drop-hero">
+                        <a class="tagHero animate__animated animate__zoomIn" href="#">Eğitim İçerikleri</a>
+                        <ul class="drop-menu">
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">C#</a></li>
+                            <li><a href="#">Node Js</a></li>
+                            <li><a href="#">Yapay Zeka</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item drop-hero">
+                        <a class="tagHero animate__animated animate__zoomIn" href="#">Hakkımızda</a>
+                        <ul class="drop-menu">
+                            <li><a href="#">Biz Kimiz</a></li>
+                            <li><a href="#">Kadro</a></li>
+                            <li><a href="#">Basında Biz</a></li>
+                            <li><a href="#">Galeri</a></li>
+                            <li><a href="#">İletişim</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="tagHero animate__animated animate__zoomIn" href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header-menu-toggle" href="#0">
+                <span class="header-menu-text">MENU</span>
+                <span class="header-menu-icon"></span>
+            </a>
+        </nav>
+        <div class="header-nav">
+            <a href="#0" class="header-nav__close" title="close">
+                <span>
+                    Close
+                </span>
+            </a>
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll" href="">Anasayfa</a></li>
+                    <li><a class="smoothscroll" href="">Yazılım Uzmanlığı Eğitimi</a></li>
+                    <li><a class="smoothscroll" href="">Yorumlar</a></li>
+                    <li><a class="smoothscroll" href="">Eğitim İçerikleri</a></li>
+                    <li><a class="smoothscroll" href="">Hakkımızda</a></li>
+                    <li><a class="smoothscroll" href="">Blog</a></li>
+                </ul>
+                <ul class="header-nav__social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white fw-bold">Online Yazılım Uzmanlığı Eğitimleri</h1>
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4 class="text-white mb-0"><a class="text-white" href="">Anasayfa</a></h4>
+                    <i class="fa-solid fa-circle-nodes px-2" style="color:#06a3da"></i>
+                    <h4 class="text-white mb-0"><a class="text-white" href="">Eğitimler</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about_us">
+        <div class="container py-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="p-a" href="#">Anasayfa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Eğitimler</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-lg-7 mt-2">
+                    <div class="section-title mb-2">
+                        <h5 class="h5bluehead">1. Giriş</h5>
+                        <h1 class="h1head">Yazılım Uzmanlığı Eğitim İçeriği</h1>
+                    </div>
+                    <h2 class="h2head">Neos Yazılım Akademiye Dair Tüm Bilgilere Ulaşın</h2>
+                    <p class="p_text mb-2">
+                        İstanbul, Ankara, İzmir ve Bursa'da bulunan şubelerimiz, %99
+                        katılımcı memnuniyeti, yüksek başarı oranı, eğitim müfredatı,
+                        etkinliklerimiz, ödüllerimiz, kalite belgemiz... Fakat en önemlisi
+                        şeffaflık ilkemizce tüm bunların görüntülenebilir olması.
+                        <br> <br>
+                        Başlamadan önce aşağıdakilere göz atabilir veya <a class="p-a" href="">hakkımızda</a>
+                        sayfasından tüm detayları
+                        inceleyebilirsiniz.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="">
+                                <h5 class="d-5">En İyi Yazılım Akademisi Ödülü</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="d-5">Katılımcı Başarıları</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="d-5">Kalite Sertifikası ve Resmi Belgeler</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="d-5">Şube Lokasyonları ve Kurum Görselleri</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="">
+                                <h5 class="d-5">Eğitmenleri Görüntüle</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="d-5">Katılımcı Görüşleri (4.9/5 Memnuniyet)</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="d-5">Etkinlikler</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="d-5">Eğitimler (Tarihinde Başlama Garantisi)</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="mybutton mt-4">Eğitimler</button>
+                </div>
+                <div class="col-lg-5 mt-2" style="min-height: 250px;">
+                    <div class="position-relative h-100">
+                        <img class="myimages" src="./img/collage-customer-experience-concept.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="section-title mb-2">
+                    <h5 class="h5bluehead">YAKLAŞAN EĞİTİMLER</h5>
+                    <h1 class="h1head">Online Yazılım Eğitimleri</h1>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" >
+                    <div class="price-item pb-4" style="width: 280px;">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="/img/bursa.jpg" alt="" style="height: 150px;">
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-2 position-absolute top-100 start-50 translate-middle" style="z-index: 2;width: 200px;">
+                                <h2 class="text-primary m-0 h2head">21 Nisan 2023</h2>
+                            </div>
+                        </div>
+                        <div class="position-relative text-center bg-light border-bottom border-primary py-4 p-4">
+                            <hr class="text-primary w-50 mx-auto mt-0">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    266 Saat / 7 Ay
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-hourglass text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Pzt-Çrs-Cum / 21:00 - 23:00
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-regular fa-calendar text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Kalan Kontenjan : 10
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-user-graduate text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    15.000 TL
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-tag text-primary pt-1"></i>
+                            </div>
+                            <a href="" class="btn btn-primary mybutton py-2 px-4 position-absolute top-100 start-50 translate-middle"> Kayıt Ol</a>
+                            <small>
+                                <a href="" class="p-a">Müfredatı Görüntüle</a>
+                            </small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" >
+                    <div class="price-item pb-4" style="width: 280px;">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="/img/bursa.jpg" alt="" style="height: 150px;">
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-2 position-absolute top-100 start-50 translate-middle" style="z-index: 2;width: 200px;">
+                                <h2 class="text-primary m-0 h2head">21 Nisan 2023</h2>
+                            </div>
+                        </div>
+                        <div class="position-relative text-center bg-light border-bottom border-primary py-4 p-4">
+                            <hr class="text-primary w-50 mx-auto mt-0">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    266 Saat / 7 Ay
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-hourglass text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Pzt-Çrs-Cum / 21:00 - 23:00
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-regular fa-calendar text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Kalan Kontenjan : 10
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-user-graduate text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    15.000 TL
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-tag text-primary pt-1"></i>
+                            </div>
+                            <a href="" class="btn btn-primary mybutton py-2 px-4 position-absolute top-100 start-50 translate-middle"> Kayıt Ol</a>
+                            <small>
+                                <a href="" class="p-a">Müfredatı Görüntüle</a>
+                            </small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" >
+                    <div class="price-item pb-4" style="width: 280px;">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="/img/bursa.jpg" alt="" style="height: 150px;">
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-2 position-absolute top-100 start-50 translate-middle" style="z-index: 2;width: 200px;">
+                                <h2 class="text-primary m-0 h2head">21 Nisan 2023</h2>
+                            </div>
+                        </div>
+                        <div class="position-relative text-center bg-light border-bottom border-primary py-4 p-4">
+                            <hr class="text-primary w-50 mx-auto mt-0">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    266 Saat / 7 Ay
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-hourglass text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Pzt-Çrs-Cum / 21:00 - 23:00
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-regular fa-calendar text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Kalan Kontenjan : 10
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-user-graduate text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    15.000 TL
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-tag text-primary pt-1"></i>
+                            </div>
+                            <a href="" class="btn btn-primary mybutton py-2 px-4 position-absolute top-100 start-50 translate-middle"> Kayıt Ol</a>
+                            <small>
+                                <a href="" class="p-a">Müfredatı Görüntüle</a>
+                            </small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center" >
+                    <div class="price-item pb-4" style="width: 280px;">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="/img/bursa.jpg" alt="" style="height: 150px;">
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-2 position-absolute top-100 start-50 translate-middle" style="z-index: 2;width: 200px;">
+                                <h2 class="text-primary m-0 h2head">21 Nisan 2023</h2>
+                            </div>
+                        </div>
+                        <div class="position-relative text-center bg-light border-bottom border-primary py-4 p-4">
+                            <hr class="text-primary w-50 mx-auto mt-0">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    266 Saat / 7 Ay
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-hourglass text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Pzt-Çrs-Cum / 21:00 - 23:00
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-regular fa-calendar text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    Kalan Kontenjan : 10
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-user-graduate text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="p_text">
+                                    15.000 TL
+                                </span>
+                                <!-- <i class="fa-solid fa-check text-primary pt-1"></i> -->
+                                <i class="fa-solid fa-tag text-primary pt-1"></i>
+                            </div>
+                            <a href="" class="btn btn-primary mybutton py-2 px-4 position-absolute top-100 start-50 translate-middle"> Kayıt Ol</a>
+                            <small>
+                                <a href="" class="p-a">Müfredatı Görüntüle</a>
+                            </small>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="section-title mb-2">
+                            <h5 class="h5bluehead">Eğitimler</h5>
+                            <h1 class="h1head">Başlamak Üzere Olan Yazılım Eğitimleri</h1>
+                        </div>
+                        <p class="p_text mb-2">
+                            Eğitimlerimizde kontenjan dolduğunda kayıtlar sonlanmaktadır. Başlangıç tarihine 30 gün kalan yazılım uzmanlığı eğitim programlarında erken kayıt avantajları bulunur. Neos Yazılım Akademi'de şu ana kadar başlamış 120'den fazla sınıfta olduğu gibi, her zaman eğitimin tarihinde başlayacağı garantisi vardır. Bu garanti sözleşmemizde yer almaktadır. Eğitim ödemelerinde nakit, eft/havale, kredi kartı(12 aya varan taksit), döviz bazlı kredi kartı ve güçlü yazılım altyapımız sayesinde alışveriş kredisi seçenekleri mevcuttur.
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="container-fluid position-relative pt-5">
+            <div class="container search-group">
+                <div class="bg-primary p-5">
+                    <form action="" class="mx-auto" style="max-width: 600px">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-dark px-4">
+                                Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer-bottom-container bg-darks text-light py-5">
+            <div class="container pt-5">
+                <div class="row pt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="white mb-4">
+                            Quick Links
+                        </h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Home
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                About Us
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Our Services
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Latest Blog
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="white mb-4">
+                            Populer Links
+                        </h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Home
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                About Us
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Our Services
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Latest Blog
+                            </a>
+                            <a class="text-light mb-2" href="">
+                                <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="white mb-4">
+                            Get In Touch
+                        </h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <p class="mb-2">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                123 Street, New York, USA
+                            </p>
+                            <p class="mb-2">
+                                <i class="fa-regular fa-envelope-open text-primary me-2"></i>
+                                info@example.com
+                            </p>
+                            <p class="mb-2">
+                                <i class="fa-solid fa-phone text-primary me-2"></i>
+                                +012 345 67890
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="white mb-4">
+                            Follow Us
+                        </h3>
+                        <div class="d-flex">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lettering js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+        integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Textillate js -->
+    <script src="https://cdn.tutorialjinni.com/textillate/0.4.0/jquery.textillate.js"></script>
+    <!-- flickity JavaScript -->
+    <script src="./js/flickity.pkgd.min.js"></script>
+    <!-- owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main Js -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -76,7 +76,7 @@ for (let i = 0; i < clip.length; i++) {
         clip[i].pause();
         clip[i].style.opacity = 0;
     });
-    clip[i].addEventListener('click', function (e) {
+    clip[i].addEventListener('mouseenter', function (e) {
         clip[i].play();
         clip[i].style.opacity = 1;
     });
