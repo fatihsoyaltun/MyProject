@@ -487,6 +487,40 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background-size: cover;
 }
 
+.form-control2 {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6b6a75;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 2px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.blogs_cards {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  height: 400px;
+  width: 280px;
+}
+.blogs_cards .blog_img {
+  overflow: hidden;
+}
+.blogs_cards .blog_img img {
+  transition: 0.4s;
+}
+.blogs_cards:hover img {
+  scale: 1.1;
+}
+
 .online {
   background: url("/img/online.jpg");
 }
