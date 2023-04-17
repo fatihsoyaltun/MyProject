@@ -21,41 +21,16 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 
 .header-up-left {
-  color: #fff;
   opacity: 0.8;
   background-color: #06a3da;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  position: relative;
-  border-top-right-radius: 10rem;
 }
-
-.template-choice {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.template-choice .swatch {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.template-choice .swatch .swatch__item {
-  border-radius: 9999px;
-  height: 1.5rem;
-  width: 1.5rem;
-  cursor: pointer;
+.header-up-left .header-up-text {
+  font-size: 0.875em;
 }
 
 .header-up-right {
-  color: #fff;
   opacity: 0.8;
   background-color: #06a3da;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  position: relative;
-  border-top-left-radius: 10rem;
 }
 .header-up-right .communication-email, .header-up-right .communication-phone {
   font-size: 0.875em;
