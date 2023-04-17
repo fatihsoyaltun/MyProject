@@ -46,7 +46,7 @@
         <div>E</div>
         <div>N</div>
     </div>
-    <!-- <div class="container-fluid d-none d-lg-block bg-light p-0">
+    <div class="container-fluid d-none d-lg-block bg-light p-0">
         <div class="row">
             <div class="col-md-6 animate__animated animate__rotateInDownLeft">
                 <div class="header-up-left">
@@ -71,10 +71,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <header class="header">
         <nav class="nav-menu">
-            <a class="animate__animated animate__zoomIn" href="./index.html"><img src="./img/neos.PNG" alt=""
+            <a class="animate__animated animate__zoomIn" href="./index.html"><img class="neos-logo" src="./img/neos.PNG" alt=""
                     width="150"></a>
             <nav class="res-menu-active">
                 <ul class="menu-hero">
@@ -149,7 +149,7 @@
         </div>
     </header>
 
-    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+    <div class="container-fluid bg-primary py-5 hero-header mb-5" style="padding-top: 7rem !important;">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-3 text-white fw-bold">Neos Yazılım Akademi Blog</h1>
@@ -234,6 +234,95 @@
                     <div class="tab-pane fade show active" id="v-pills-kayitol" role="tabpanel"
                         aria-labelledby="v-pills-kayitol-tab" tabindex="0">
                         <h2 class="h2head">KAYIT OL</h2>
+                        <div class="main-wrapper login-form">
+                            <div class="login-body">
+                                <div class="container">
+                                    <div class="login-body-wrapper">
+                                        <div class="loginLeftSide">
+                                            <img class="login-img" src="./img/ankara.jpg" alt="">
+                                        </div>
+                                        <div class="loginRightSide">
+                                            <div class="login-right-wrap">
+                                                <h1>Hoşgeldiniz</h1>
+                                                <p class="signIn">
+                                                    Hesabınız yok mu?
+                                                    <a href="./register.html">Kayıt Ol</a>
+                                                </p>
+                                                <h2>Giriş Yap</h2>
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Kullanıcı Adı
+                                                            <span class="login-danger">*</span>
+                                                        </label>
+                                                        <input class="form-control user-log-name" type="text">
+                                                        <span class="login-icon">
+                                                            <i class="fas fa-user-circle"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Parola
+                                                            <span class="login-danger">*</span>
+                                                        </label>
+                                                        <input class="form-control pass user-log-password" type="text">
+                                                        <span class="login-icon">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="form-forget">
+                                                        <div class="remember w-100 d-flex align-items-center justify-content-between">
+                                                            <label class="check mb-0 d-inline-flex">
+                                                                <input type="checkbox" name="radio">
+                                                                Beni Hatırla
+                                                            </label>
+                                                            <a href="#">Parolanızı mı unuttunuz?</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button id="liveToastBtn" class="btn btn-primary w-100 logBtn" type="button">Giriş Yap</button>
+                                                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                                            <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+                                                                aria-atomic="true">
+                                                                <div class="toast-header">
+                                                                    <strong class="me-auto">Neos Yazılım</strong>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="toast" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="toast-body bg-info d-flex align-items-center justify-content-between">
+                                                                    Hoşgeldiniz! Sayfaya Yönlendiriliyorsunuz.
+                                                                    <div class="spinner-border text-light" role="status">
+                                                                        <span class="visually-hidden">Loading...</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="loginOr">
+                                                    <span class="login-or-line"></span>
+                                                    <span class="login-or-text">veya</span>
+                                                </div>
+                                                <div class="login-social-icons">
+                                                    <a href="#">
+                                                        <i class="fa-brands fa-google-plus-g"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-brands fa-facebook-f"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-girisyap" role="tabpanel"
