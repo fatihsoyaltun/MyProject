@@ -14,7 +14,7 @@ $backgroundrightarrow: '/img/right.png'
 $backgroundeducation_process: '/img/aerial-view-business-team.jpg'
 
 html
-    // overflow-x: hidden
+    overflow-x: hidden
     // scroll-padding-top: 9rem
     // scroll-behavior: smooth
     body
@@ -32,30 +32,55 @@ html
             font-family: "Jost",sans-serif
 
 .header-up-left
+    width: 98%
     opacity: 0.8
-    // background-color: $color_primary
-    padding: .50rem
+    background-color: $color_primary
+    position: relative
+    &::after 
+        position: absolute
+        content: ""
+        width: 35px
+        height: 100%
+        top: 0
+        right: -14px
+        background: $color_primary
+        transform: skew(40deg)
     .header-up-left-text
+        color: #fff
         display: flex
         align-items: center
         font-size: .875em
+        padding: .50rem
         gap: .5rem
 .header-up-right
+    width: 100%
     opacity: 0.8
     background-color: $color_primary
-    padding: .50rem
     color: #fff
+    position: relative
+    &::before
+        position: absolute
+        content: ""
+        width: 35px
+        height: 100%
+        top: 0
+        left: -17px
+        background: $color_primary
+        transform: skew(40deg)
     .header-up-right-text
         display: flex
         align-items: center
         justify-content: flex-end
-        gap: .5rem
         font-size: .875em
         .textOne
+            padding: .50rem
+            background-color: $color_primary
             display: flex
             align-items: center
             gap: .5rem
         .textTwo
+            padding: .50rem
+            background-color: $color_primary
             display: flex
             align-items: center
             gap: .5rem
@@ -312,10 +337,12 @@ html
             height: 100%
             background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url($carousel-bg) center center no-repeat
             background-size: cover
-            .caro-text
+            .tracking-in-expand
+                animation: tracking-in-expand 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+            .caro-text,.caro-text2
                 margin: 0
                 padding: 0
-                font-size: 2rem
+                font-size: 1.5rem
         .flickity-button
             background: #333
             &:hover
@@ -757,6 +784,17 @@ html
                 .owl-next   
                 .owl-prev
 
+
+
+//keyframes
+@keyframes tracking-in-expand
+  0% 
+    letter-spacing: -0.5em
+    opacity: 0
+  40% 
+    opacity: 0.6
+  100% 
+    opacity: 1
 //Responsive
 @media screen and (max-width: 1440px)
     nav

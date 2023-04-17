@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 html body {
   scroll-behavior: smooth;
 }
@@ -19,35 +22,63 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 
 .header-up-left {
+  width: 98%;
   opacity: 0.8;
-  padding: 0.5rem;
+  background-color: #06a3da;
+  position: relative;
+}
+.header-up-left::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 100%;
+  top: 0;
+  right: -14px;
+  background: #06a3da;
+  transform: skew(40deg);
 }
 .header-up-left .header-up-left-text {
+  color: #fff;
   display: flex;
   align-items: center;
   font-size: 0.875em;
+  padding: 0.5rem;
   gap: 0.5rem;
 }
 
 .header-up-right {
+  width: 100%;
   opacity: 0.8;
   background-color: #06a3da;
-  padding: 0.5rem;
   color: #fff;
+  position: relative;
+}
+.header-up-right::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 100%;
+  top: 0;
+  left: -17px;
+  background: #06a3da;
+  transform: skew(40deg);
 }
 .header-up-right .header-up-right-text {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.5rem;
   font-size: 0.875em;
 }
 .header-up-right .header-up-right-text .textOne {
+  padding: 0.5rem;
+  background-color: #06a3da;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 .header-up-right .header-up-right-text .textTwo {
+  padding: 0.5rem;
+  background-color: #06a3da;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -340,10 +371,13 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url("/img/global-connections-background-social-media-banner.jpg") center center no-repeat;
   background-size: cover;
 }
-.carousel-flickity .main-carousel .carousel-cell .caro-text {
+.carousel-flickity .main-carousel .carousel-cell .tracking-in-expand {
+  animation: tracking-in-expand 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.carousel-flickity .main-carousel .carousel-cell .caro-text, .carousel-flickity .main-carousel .carousel-cell .caro-text2 {
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .carousel-flickity .main-carousel .flickity-button {
   background: #333;
@@ -856,6 +890,18 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   font-size: 22px;
   transition: 0.5s;
   font-weight: bold;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1440px) {
   nav .menu-item .tagHero {
