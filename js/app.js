@@ -107,21 +107,25 @@ for (let i = 0; i < clip.length; i++) {
     });
 };
 
-// jQuery(function ($){
-//     $('.caro-text').textillate({
-//         loop : true,
-//         autoplay : true,
-//         minDisplayTime:3000,
-//         initialDelay: 1000,
-//         in: {
-//             effect :"fadeInDown",
-//             delayScale : 3,
-//             shuffle: true,
-//         },
-//         out: {
-//             effect :"rollOut",
-//             delayScale : 3,
-//             reverse: true,
-//         }
-//     })
-// })
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.previous');
+let animClss = document.querySelectorAll('.caro-text');
+let animClss2 = document.querySelectorAll('.caro-text2');
+
+nextBtn.addEventListener('click', () => {
+    animClss2.forEach((el) => {
+        el.classList.add('animate__backInDown');
+    });
+    animClss.forEach((el) => {
+        el.classList.remove('animate__flipInX');
+    });
+});
+
+prevBtn.addEventListener('click', () => {
+    animClss.forEach((el) => {
+        el.classList.add('animate__flipInX');
+    });
+    animClss2.forEach((el) => {
+        el.classList.remove('animate__backInDown');
+    });
+});
