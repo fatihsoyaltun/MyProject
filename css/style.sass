@@ -501,25 +501,27 @@ html
 
 //blog//
 .blogs
-    .blog-list
-        border: none
-        overflow: hidden !important
-        width: 250px
-        display: flex
-        justify-content: center
-        transition: 0
-        .nav-pills
-            background-color: red !important
-
-        p
-            text-transform: uppercase !important
-            text-overflow: ellipsis !important
-            white-space: nowrap !important
+    .blogs_content_left
+        position: sticky
+        top: 100px
+        .blog-list
+            border: none
             overflow: hidden !important
             width: 250px
-            margin-bottom: 0
-
-
+            display: flex
+            justify-content: center
+            transition: 0
+            p
+                text-transform: uppercase !important
+                text-overflow: ellipsis !important
+                white-space: nowrap !important
+                overflow: hidden !important
+                width: 250px
+                margin-bottom: 0
+        .nav-link.active
+            background-color: #06a3da !important
+    .blogs_content_right
+        border-left: 2px solid #eeee
 .blogs_cards
     position: relative
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
