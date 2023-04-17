@@ -14,11 +14,11 @@ $backgroundrightarrow: '/img/right.png'
 $backgroundeducation_process: '/img/aerial-view-business-team.jpg'
 
 html
-    overflow-x: hidden
-    scroll-padding-top: 9rem
-    scroll-behavior: smooth
+    // overflow-x: hidden
+    // scroll-padding-top: 9rem
+    // scroll-behavior: smooth
     body
-        // height: 3000px
+        scroll-behavior: smooth
         ul
             margin: 0
             padding: 0
@@ -33,14 +33,32 @@ html
 
 .header-up-left
     opacity: 0.8
-    background-color: $color_primary
-    .header-up-text
+    // background-color: $color_primary
+    padding: .50rem
+    .header-up-left-text
+        display: flex
+        align-items: center
         font-size: .875em
+        gap: .5rem
 .header-up-right
     opacity: 0.8
     background-color: $color_primary
-    .communication-email,.communication-phone
+    padding: .50rem
+    color: #fff
+    .header-up-right-text
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        gap: .5rem
         font-size: .875em
+        .textOne
+            display: flex
+            align-items: center
+            gap: .5rem
+        .textTwo
+            display: flex
+            align-items: center
+            gap: .5rem
 .header
     z-index: 999
     width: 100%
@@ -48,14 +66,26 @@ html
     position: sticky
     top: 0
     .scrolled
-        background-color: rgba(9, 30, 62, 0.85) !important
+        background-color: #fff !important
         a
-            color: #fff !important
+            color: $color_dark !important
         .drop-menu
-            background-color: rgba(9, 30, 62, 0.85) !important
+            background-color: #fff !important
+        .header-menu-toggle
+            color: #000 !important
+            .header-menu-text
+                color: #000 !important
+            .header-menu-icon
+                background-color: #000 !important
+                &::before
+                    background-color: #000 !important
+                &::after
+                    background-color: #000 !important
+
+
     .nav-menu
         transform: translateY(0px)
-        position: relative
+        position: absolute
         width: 100%
         display: flex
         justify-content: space-between
@@ -63,8 +93,8 @@ html
         height: 80px
         padding: 0 30px
         // border-radius: 10px 10px
-        background-color: #fff
-        box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
+        background-color: transparent
+        // box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
         transition: 0.4s ease-in-out
         nav
             .menu-hero
@@ -89,7 +119,7 @@ html
                         font-family: "Josefin Sans", sans-serif
                         margin: 0
                         transition: 0.3s ease-in-out
-                        color: $color_dark
+                        color: $color_light
                     .drop-menu
                         pointer-events: none
                         opacity: 0
@@ -101,7 +131,7 @@ html
                         top: 90px
                         left: 0
                         border-radius: 5px
-                        background-color: #fff
+                        background-color: rgba(9, 30, 62)
                         flex-direction: column
                         box-shadow: 0 3px 5px 0 rgba(26, 47, 51, 0.2)
                         transition: 0.3s ease-in-out
@@ -126,7 +156,7 @@ html
             font-family: "montserrat-medium", sans-serif
             text-transform: uppercase
             letter-spacing: .3rem
-            color: black 
+            color: #fff 
             transition: all 0.5s ease-in-out
             background-color: transparent
             display: none
@@ -138,7 +168,7 @@ html
                 width: 70px
                 padding-left: 12px
                 background-color: transparent
-                color: #000
+                color: #fff
             .header-menu-icon
                 display: block
                 width: 22px
@@ -149,13 +179,13 @@ html
                 top: 50%
                 right: auto
                 bottom: auto
-                background-color: #000
+                background-color: #fff
                 transition: all 0.5s ease-in-out
                 &::before
                     content: ''
                     width: 100%
                     height: 100%
-                    background-color: inherit
+                    background-color: #fff
                     position: absolute
                     left: 0
                     transition: all 0.5s ease-in-out
@@ -164,7 +194,7 @@ html
                     content: ''
                     width: 100%
                     height: 100%
-                    background-color: inherit
+                    background-color: #fff
                     position: absolute
                     left: 0
                     transition: all 0.5s ease-in-out
@@ -238,7 +268,7 @@ html
                 letter-spacing: .25rem
                 margin-bottom: 4.8rem
                 margin-top: 0.9rem
-                color: #39b54a
+                color: $color_primary
             .header-nav__list
                 font-family: "montserrat-regular", sans-serif
                 font-size: 1rem
@@ -253,7 +283,7 @@ html
                         transition: all 0.3s ease-in-out
                         &:hover
                             margin-left: 5px
-                            color: #39b54a
+                            color: $color_primary
             .header-nav__social
                 list-style: none
                 display: inline-block
@@ -601,6 +631,77 @@ html
         &:hover
             background-color: #f57e57
             border: 1px solid #f57e57
+
+.owlTwo
+    .owl-item
+        .card
+            font-size: 13px !important
+            font-weight: 400
+            line-height: 21px
+            height: 200px
+        .card-user-photo 
+            width: 40px
+            height: 40px
+            border-radius: 50%
+        .stars-style
+            width: 15px
+            height: 15px
+            display: inline-flex
+    .owl-nav
+        position: absolute
+        width: calc(100% + 52px)
+        height: 46px
+        top: calc(50% - 40px)
+        // left: -35px
+        display: flex
+        justify-content: space-between
+        z-index: 1
+        button
+            position: relative
+            width: 46px
+            height: 46px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #ffffff
+            background: #06a3da !important
+            border-radius: 2px
+            font-size: 22px
+            transition: 0.5s
+            font-weight: bold
+        .owl-prev
+            left: -30px !important
+        .owl-next
+            right: 22px
+
+.comment-process
+    background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url($backgroundeducation_process) center center no-repeat
+    background-size: cover
+    .owl-carousel 
+        .owl-nav
+                position: absolute
+                width: calc(100% + 52px)
+                height: 46px
+                top: calc(50% - 50px)
+                left: -25px
+                display: flex
+                justify-content: space-between
+                z-index: 1
+                button
+                    position: relative
+                    width: 46px
+                    height: 46px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: #ffffff
+                    background: #06a3da
+                    border-radius: 2px
+                    font-size: 22px
+                    transition: 0.5s
+                    font-weight: bold
+                .owl-next   
+                .owl-prev
 
 //Responsive
 @media screen and (max-width: 1440px)
