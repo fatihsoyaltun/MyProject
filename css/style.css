@@ -570,17 +570,26 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.hrblog {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+}
+
+.blogs {
+  font-family: "Jost", sans-serif;
+}
 .blogs .blogs_content_left {
   position: sticky;
   top: 100px;
 }
 .blogs .blogs_content_left .blog-list {
-  border: none;
+  color: #091e3e;
+  border: none !important;
   overflow: hidden !important;
   width: 250px;
   display: flex;
   justify-content: center;
-  transition: 0;
+  transition: 0.5s;
+  margin-bottom: 1rem;
 }
 .blogs .blogs_content_left .blog-list p {
   text-transform: uppercase !important;
@@ -592,6 +601,11 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 .blogs .blogs_content_left .nav-link.active {
   background-color: #06a3da !important;
+  color: #091e3e;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  color: white;
 }
 .blogs .blogs_content_right {
   border-left: 2px solid rgba(238, 238, 238, 0.9333333333);
@@ -922,8 +936,6 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 .login-form .login-body .login-body-wrapper .loginLeftSide {
   align-items: center;
-  flex-direction: column;
-  justify-content: end;
   width: 400px;
   display: flex;
   background-blend-mode: multiply;
