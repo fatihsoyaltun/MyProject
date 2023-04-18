@@ -21,8 +21,23 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   font-family: "Jost", sans-serif;
 }
 
+.weather-content {
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.weather-content div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
 .header-up-left {
-  width: 98%;
+  width: 400px;
   opacity: 0.8;
   background-color: #06a3da;
   position: relative;
@@ -35,7 +50,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   top: 0;
   right: -14px;
   background: #06a3da;
-  transform: skew(40deg);
+  transform: skew(-40deg);
 }
 .header-up-left .header-up-left-text {
   color: #fff;
@@ -47,11 +62,12 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 
 .header-up-right {
-  width: 100%;
+  width: 400px;
   opacity: 0.8;
   background-color: #06a3da;
   color: #fff;
   position: relative;
+  right: 0;
 }
 .header-up-right::before {
   position: absolute;
