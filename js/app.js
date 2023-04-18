@@ -26,13 +26,12 @@ const logo = document.querySelector('.neos-logo');
 window.addEventListener('scroll', function () {
     if (window.pageYOffset > 100) {
         navbar.classList.add('scrolled');
-        logo.src="/img/neos.PNG";
+        logo.src = "/img/neos.PNG";
     } else {
         navbar.classList.remove('scrolled');
-        logo.src="/img/neosLogo2.png"
+        logo.src = "/img/neosLogo2.png"
     }
 });
-
 
 
 let menuBtn = document.querySelector('.header-menu-toggle');
@@ -50,24 +49,33 @@ menuCloseBtn.addEventListener('click', () => {
     menuContent.classList.remove('menu-is-open');
 });
 
+document.addEventListener('click', (event) => {
+    if (!menuHero.contains(event.target) && !menuBtn.contains(event.target)) {
+        menuHero.classList.remove('menu-is-open');
+        menuContent.classList.remove('menu-is-open');
+    }
+});
+
+
+
 $('.owlTwo').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
         },
-        600:{
-            items:3,
-            nav:false
+        600: {
+            items: 3,
+            nav: false
         },
-        1000:{
-            items:4,
-            nav:true,
-            loop:false,
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false,
         }
     }
 })
@@ -129,5 +137,3 @@ prevBtn.addEventListener('click', () => {
         el.classList.remove('animate__backInDown');
     });
 });
-
-
