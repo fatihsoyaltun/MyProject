@@ -20,6 +20,7 @@ if (preloader) {
     });
 }
 
+//transparent navbar
 const navbar = document.querySelector('.nav-menu');
 const logo = document.querySelector('.neos-logo');
 
@@ -33,7 +34,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
+//responsive menu
 let menuBtn = document.querySelector('.header-menu-toggle');
 let menuHero = document.querySelector('.header-nav');
 let menuContent = document.querySelector('.header-nav__content');
@@ -98,7 +99,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-
+//hover video
 const clip = document.querySelectorAll('.clip');
 for (let i = 0; i < clip.length; i++) {
     clip[i].addEventListener('mouseenter', function (e) {
@@ -115,6 +116,7 @@ for (let i = 0; i < clip.length; i++) {
     });
 };
 
+// carousel animation
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.previous');
 let animClss = document.querySelectorAll('.caro-text');
@@ -137,3 +139,5 @@ prevBtn.addEventListener('click', () => {
         el.classList.remove('animate__backInDown');
     });
 });
+
+
