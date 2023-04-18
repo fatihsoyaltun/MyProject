@@ -496,10 +496,38 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   padding-right: 3rem;
   background-color: #06a3da;
   border: none;
+  position: relative;
 }
 .mybutton:hover {
-  background-color: #f57e57;
-  color: #091e3e;
+  background: transparent;
+  color: #000;
+}
+.mybutton::before, .mybutton::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: top 0.5s, left 0.5s;
+  z-index: -1;
+}
+.mybutton::before {
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
+.mybutton::after {
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.mybutton:hover::before {
+  top: -5px;
+  left: -15px;
+}
+.mybutton:hover::after {
+  top: 5px;
+  left: 15px;
 }
 
 .myimages {
