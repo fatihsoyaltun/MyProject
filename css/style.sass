@@ -30,9 +30,23 @@ html
             max-width: 100%
         h1,h2,h3,h4,h5,h6
             font-family: "Jost",sans-serif
+.weather-content
+    top: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-family: "Jost",sans-serif
+        font-weight: bold
+
+        
 
 .header-up-left
-    width: 98%
+    width: 400px
     opacity: 0.8
     background-color: $color_primary
     position: relative
@@ -44,7 +58,7 @@ html
         top: 0
         right: -14px
         background: $color_primary
-        transform: skew(40deg)
+        transform: skew(-40deg)
     .header-up-left-text
         color: #fff
         display: flex
@@ -53,11 +67,12 @@ html
         padding: .50rem
         gap: .5rem
 .header-up-right
-    width: 100%
+    width: 400px
     opacity: 0.8
     background-color: $color_primary
     color: #fff
     position: relative
+    right: 0
     &::before
         position: absolute
         content: ""
