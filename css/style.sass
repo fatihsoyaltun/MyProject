@@ -499,18 +499,23 @@ html
     border-radius: 2px
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 
+.hrblog
+    background-color: #eeee
 //blog//
 .blogs
+    font-family: "Jost", sans-serif
     .blogs_content_left
         position: sticky
         top: 100px
         .blog-list
-            border: none
+            color: #091e3e
+            border: none !important
             overflow: hidden !important
             width: 250px
             display: flex
             justify-content: center
-            transition: 0
+            transition: .5s
+            margin-bottom: 1rem
             p
                 text-transform: uppercase !important
                 text-overflow: ellipsis !important
@@ -518,8 +523,18 @@ html
                 overflow: hidden !important
                 width: 250px
                 margin-bottom: 0
+                
+                
         .nav-link.active
             background-color: #06a3da !important
+            // background-color: white
+            color: #091e3e
+            border-radius: 10px
+            letter-spacing: 2px
+            border-radius: 10px
+            color: white
+
+
     .blogs_content_right
         border-left: 2px solid #eeee
 .blogs_cards
@@ -692,6 +707,8 @@ html
                     border-color: #091e3e !important
 .bg-darks
         background-color: #091e3e !important
+
+
 .footer-bottom-container
     margin-top: -75px
     visibility: visible
@@ -808,8 +825,6 @@ html
             width: 100%
             .loginLeftSide
                 align-items: center
-                flex-direction: column
-                justify-content: end
                 width: 400px
                 display: flex
                 background-blend-mode: multiply

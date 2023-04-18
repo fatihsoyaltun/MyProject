@@ -137,3 +137,4 @@ prevBtn.addEventListener('click', () => {
         el.classList.remove('animate__backInDown');
     });
 });
+
