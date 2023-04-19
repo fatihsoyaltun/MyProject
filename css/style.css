@@ -643,12 +643,37 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background-color: rgba(238, 238, 238, 0.9333333333);
 }
 
+.responsive_open_btn {
+  display: none;
+  border-radius: 10px;
+  background-color: #06a3da;
+  color: #091e3e;
+  border: none;
+  width: 100px;
+  height: 50px;
+}
+
 .blogs {
   font-family: "Jost", sans-serif;
 }
 .blogs .blogs_content_left {
   position: sticky;
   top: 100px;
+  position: relative;
+}
+.blogs .blogs_content_left .responsive_close_btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #091e3e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 .blogs .blogs_content_left .blog-list {
   color: #091e3e;
@@ -1187,6 +1212,15 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
     padding: 34px 10px 0 !important;
   }
 }
+@media screen and (max-width: 1400px) {
+  .blogs {
+    display: flex;
+    justify-content: center;
+  }
+  .blogs .loginLeftSide {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 992px) {
   .res-menu-active {
     display: none;
@@ -1194,15 +1228,37 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   .header-menu-toggle {
     display: block !important;
   }
-  .blogs_content_left {
+  .responsive_open_btn {
+    display: block;
+  }
+  .blogs {
+    position: relative !important;
+  }
+  .blogs .col-8 {
+    width: 100%;
+    border-left: none;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  .blogs .blogs_content_left {
     display: none;
+    position: absolute !important;
+    top: 0;
+    background-color: rgba(238, 238, 238, 0.9333333333);
+    z-index: 1;
+  }
+  .blogs .blogs_content_left .responsive_close_btn {
+    display: flex;
   }
 }
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
-  .loginLeftSide {
+  body .blogs .col-8 {
+    border-left: none;
+  }
+  body .blogs .loginLeftSide {
     display: none !important;
   }
 }

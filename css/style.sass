@@ -571,11 +571,35 @@ html
 .hrblog
     background-color: #eeee
 //blog//
+.responsive_open_btn
+    display: none
+    border-radius: 10px
+    background-color: #06a3da
+    color: #091e3e
+    border: none
+    width: 100px
+    height: 50px
 .blogs
     font-family: "Jost", sans-serif
+    .left-main-responsive
+        
     .blogs_content_left
         position: sticky
         top: 100px
+        position: relative
+        .responsive_close_btn
+            display: none
+            justify-content: center
+            align-items: center
+            background-color: #091e3e
+            color: white
+            border: none
+            border-radius: 50%
+            width: 30px
+            height: 30px
+            position: absolute
+            right: 10px
+            top: 10px
         .blog-list
             color: #091e3e
             border: none !important
@@ -1049,19 +1073,48 @@ html
             .tagHero
                 padding: 34px 10px 0 !important
 
+@media screen and (max-width: 1400px)
+    .blogs
+        display: flex
+        justify-content: center
+        .loginLeftSide
+                display: none !important
+    
+
 @media screen and (max-width: 992px)
     .res-menu-active
         display: none
     .header-menu-toggle
         display: block !important
-    .blogs_content_left
-        display: none
+    .responsive_open_btn
+        display: block
+    .blogs
+        position: relative !important
+        .col-8
+            width: 100%
+            border-left: none
+            margin-left: 0 !important 
+            padding-left: 0 !important
+        .blogs_content_left
+            display: none
+            position: absolute !important
+            top: 0
+            background-color: #eeee
+            z-index: 1
+            .responsive_close_btn
+                display: flex
+
+            
+            // display: none
 
 @media screen and (max-width:768px)
     body
         overflow-x: hidden
-    .loginLeftSide
-        display: none !important
+        .blogs
+            .col-8
+                border-left: none
+            .loginLeftSide
+                display: none !important
 
 @media screen and (max-width:576px)
     body
