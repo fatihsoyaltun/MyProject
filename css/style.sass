@@ -31,6 +31,11 @@ html
         h1,h2,h3,h4,h5,h6
             font-family: "Jost",sans-serif
 
+
+.dark-mode-active
+    background-color: #000000 
+
+
 #progress
     position: fixed
     bottom: 20px
@@ -54,6 +59,49 @@ html
         font-size: 15px
         color: $color_light
 
+.cnvs-switcher-container
+    position: fixed
+    top: 100px
+    right: -4px
+    z-index: 9999
+    width: 3rem
+    height: 3rem
+    .darkLight-mode
+        border-top-right-radius: 0 !important
+        border-bottom-right-radius: 0 !important
+        border-top-left-radius: 0.375rem !important
+        border-bottom-left-radius: 0.375rem !important
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+        background-color: $color_light
+    .offcanvas.offcanvas-end
+        top: 6.2rem !important
+        border-top-right-radius: 0 !important
+        border-bottom-right-radius: 0 !important
+        border-top-left-radius: 0.375rem !important
+        border-bottom-left-radius: 0.375rem !important
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+        background-color: $color_light
+    .darkLight-mode_content
+        width: 200px !important
+        height: 200px !important
+        .offcanvas-body
+            padding: 0 !important
+            .mode-choice
+                display: flex
+                justify-content: center 
+                align-items: center
+                .mode-choice-parent
+                    display: flex
+                    cursor: pointer
+                    font-size: 18px
+                    width: 50px
+                    height: 50px
+                    border-radius: 50%
+                    align-items: center
+                    justify-content: center
+                    &:hover
+                        background: $color_primary
+                        color: $color_light
 
 
 .weather-content
