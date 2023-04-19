@@ -21,6 +21,30 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   font-family: "Jost", sans-serif;
 }
 
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 55px;
+  width: 55px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+}
+#progress #progress-value {
+  display: block;
+  height: calc(100% - 9px);
+  width: calc(100% - 9px);
+  background-color: #091e3e;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  color: #eef9ff;
+}
+
 .weather-content {
   top: 5px;
   display: flex;
@@ -148,7 +172,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 .header .nav-menu nav .menu-hero .drop-hero:hover .drop-menu {
   opacity: 1;
   pointer-events: all;
-  transform: translateY(-9px);
+  transform: translateY(-40px);
 }
 .header .nav-menu nav .menu-hero .menu-item {
   position: relative;
@@ -269,7 +293,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   line-height: 1.846;
   padding: 2rem 2rem;
   height: 100%;
-  width: 40%;
+  width: 320px;
   position: fixed;
   right: 0;
   top: 0;
@@ -1169,5 +1193,21 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   }
   .header-menu-toggle {
     display: block !important;
+  }
+  .blogs_content_left {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .loginLeftSide {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
