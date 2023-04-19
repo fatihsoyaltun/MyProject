@@ -138,33 +138,36 @@
             <div class="header-nav__content">
                 <h3>MENU</h3>
                 <ul class="header-nav__list">
-                    <li><a  class="smoothscroll" href="index.html">Anasayfa</a></li>
-                    <li><a  class="smoothscroll" href="">Yazılım Uzmanlığı Eğitimi</a></li>
-                    <li><a  class="smoothscroll" href="distance-learning.html">Uzaktan Eğitim</a></li>
-                    <li><a  class="smoothscroll" href="">İstanbul Şube</a></li>
-                    <li><a  class="smoothscroll" href="">Ankara Şube</a></li>
-                    <li><a  class="smoothscroll" href="">İzmir Şube</a></li>
-                    <li><a  class="smoothscroll" href="">Bursa Şube</a></li>
-                    <li><a  class="smoothscroll" href="comments.html">Yorumlar</a></li>
-                    <li><a  class="smoothscroll" href="">Eğitim İçerikleri</a></li>
-                    <li><a  class="smoothscroll" href="contents.html">Python</a></li>
-                    <li><a  class="smoothscroll" href="">C# İçerikleri</a></li>
-                    <li><a  class="smoothscroll" href="">Node Js</a></li>
-                    <li><a  class="smoothscroll" href="">Yapay Zeka</a></li>
-                    <li><a  class="smoothscroll" href="">Hakkımızda</a></li>
-                    <li><a  class="smoothscroll" href="">Biz Kimiz</a></li>
-                    <li><a  class="smoothscroll" href="">Kadro</a></li>
-                    <li><a  class="smoothscroll" href="">Basında Biz</a></li>
-                    <li><a  class="smoothscroll" href="">Galeri</a></li>
-                    <li><a  class="smoothscroll" href="contact_us.html">İletişim</a></li>
-                    <li><a  class="smoothscroll" href="blog.html">Blog</a></li>
+                    <li><a class="smoothscroll" href="index.html">Anasayfa</a></li>
+                    <li><a class="smoothscroll" href="">Yazılım Uzmanlığı Eğitimi</a></li>
+                    <li><a class="smoothscroll" href="distance-learning.html">Uzaktan Eğitim</a></li>
+                    <li><a class="smoothscroll" href="">İstanbul Şube</a></li>
+                    <li><a class="smoothscroll" href="">Ankara Şube</a></li>
+                    <li><a class="smoothscroll" href="">İzmir Şube</a></li>
+                    <li><a class="smoothscroll" href="">Bursa Şube</a></li>
+                    <li><a class="smoothscroll" href="comments.html">Yorumlar</a></li>
+                    <li><a class="smoothscroll" href="">Eğitim İçerikleri</a></li>
+                    <li><a class="smoothscroll" href="contents.html">Python</a></li>
+                    <li><a class="smoothscroll" href="">C# İçerikleri</a></li>
+                    <li><a class="smoothscroll" href="">Node Js</a></li>
+                    <li><a class="smoothscroll" href="">Yapay Zeka</a></li>
+                    <li><a class="smoothscroll" href="">Hakkımızda</a></li>
+                    <li><a class="smoothscroll" href="">Biz Kimiz</a></li>
+                    <li><a class="smoothscroll" href="">Kadro</a></li>
+                    <li><a class="smoothscroll" href="">Basında Biz</a></li>
+                    <li><a class="smoothscroll" href="">Galeri</a></li>
+                    <li><a class="smoothscroll" href="contact_us.html">İletişim</a></li>
+                    <li><a class="smoothscroll" href="blog.html">Blog</a></li>
                 </ul>
                 <ul class="header-nav__social">
                     <li><a href="https://www.facebook.com/neosyazilimakademi/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/neos-yaz%C4%B1l%C4%B1m/mycompany/"><i class="fa fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/neos-yaz%C4%B1l%C4%B1m/mycompany/"><i
+                                class="fa fa-linkedin-in"></i></a></li>
                     <li><a href="https://www.instagram.com/neos_yazilim/"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCqK3l-AUa3KgG8WvqDeln1g"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://api.whatsapp.com/send/?phone=905013205358&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCqK3l-AUa3KgG8WvqDeln1g"><i
+                                class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=905013205358&text&type=phone_number&app_absent=0"><i
+                                class="fa fa-whatsapp"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -200,13 +203,16 @@
                 </div>
             </div>
             <hr class="hrblog">
-            <div class="d-flex align-items-start blogs">
-                <div class="nav flex-column align-items-center nav-pills me-3 col-lg-3 px-3 blogs_content_left pt-5"
-                    id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+            <button class="responsive_open_btn" onclick="openleft()"><i class="fa-solid fa-right-from-bracket fa-fade"></i></button>
+            <div class="d-flex align-items-start blogs row ">
+                <div class="nav col-lg-3 flex-column align-items-center nav-pills me-3 px-3 blogs_content_left pt-5"
+                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
                     <!-- Blog Başlıkları Sol Menü -->
+                    <button class="responsive_close_btn" onclick="closeleft()"><i class="fa-solid fa-xmark"></i></button>
                     <button class="nav-link active blog-list" id="v-pills-kayitol-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-kayitol" type="button" role="tab" aria-controls="v-pills-kayitol"
-                        aria-selected="true" >
+                        aria-selected="true">
                         <p>
                             Kayıt Ol
                         </p>
@@ -214,7 +220,7 @@
 
                     <button class="nav-link blog-list" id="v-pills-girisyap-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-girisyap" type="button" role="tab" aria-controls="v-pills-girisyap"
-                        aria-selected="false" >
+                        aria-selected="false">
                         <p>
                             Giriş Yap
                         </p>
@@ -222,7 +228,7 @@
 
                     <button class="nav-link blog-list" id="v-pills-anasayfa-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-anasayfa" type="button" role="tab" aria-controls="v-pills-anasayfa"
-                        aria-selected="false" >
+                        aria-selected="false">
                         <p>
                             Anasayfa
                         </p>
@@ -230,14 +236,14 @@
 
                     <button class="nav-link blog-list" id="v-pills-blog1-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-blog1" type="button" role="tab" aria-controls="v-pills-blog1"
-                        aria-selected="false" >
+                        aria-selected="false">
                         <p>
                             Yazılım Eğitimleri</p>
                     </button>
 
                     <button class="nav-link blog-list" id="v-pills-blog2-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-blog2" type="button" role="tab" aria-controls="v-pills-blog2"
-                        aria-selected="false" >
+                        aria-selected="false">
                         <p>
                             Nedir Bu javascript?
                         </p>
@@ -245,7 +251,7 @@
 
                     <button class="nav-link blog-list" id="v-pills-blog3-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-blog3" type="button" role="tab" aria-controls="v-pills-blog3"
-                        aria-selected="false" >
+                        aria-selected="false">
                         <p>
                             YAZILIM EĞITIMINDE YÜZ YÜZE MI ONLINE MI TERCIH EDILMELIDIR?
                         </p>
@@ -503,7 +509,7 @@
                                                 veritatis.</p>
                                         </div>
                                         <div class="d-flex justify-content-between px-3 user_date">
-                                            <a class="small" href="#" >Devamını Oku...</a>
+                                            <a class="small" href="#">Devamını Oku...</a>
                                             <p class="text-muted small">15.02.2023</p>
                                         </div>
                                     </div>
@@ -720,7 +726,9 @@
                                     <h2 class="h2head">SIFIRDAN YAZILIM ÖĞRENIRKEN NELER YAPMAMIZ GEREKIYOR?
                                     </h2>
                                     <h6 class="mt-4">
-                                        Yazılım öğrenmenin birçok yolu vardır. İnternette araştırırken bununla ilgili de farklı farklı yazılar ve videolar karşımıza çıkıyor. Bu yazıda sizinle kendi tecrübelerimi paylaşacağım.
+                                        Yazılım öğrenmenin birçok yolu vardır. İnternette araştırırken bununla ilgili de
+                                        farklı farklı yazılar ve videolar karşımıza çıkıyor. Bu yazıda sizinle kendi
+                                        tecrübelerimi paylaşacağım.
                                     </h6>
                                     <div class="mt-4 d-flex justify-content-center align-items-center"
                                         style="height: 500px; overflow: hidden;">
@@ -850,19 +858,24 @@
                             Follow Us
                         </h3>
                         <div class="d-flex">
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com/company/neos-yaz%C4%B1l%C4%B1m/mycompany/">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="https://www.linkedin.com/company/neos-yaz%C4%B1l%C4%B1m/mycompany/">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/neos_yazilim/">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="https://www.instagram.com/neos_yazilim/">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/neosyazilimakademi/">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="https://www.facebook.com/neosyazilimakademi/">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.youtube.com/channel/UCqK3l-AUa3KgG8WvqDeln1g">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="https://www.youtube.com/channel/UCqK3l-AUa3KgG8WvqDeln1g">
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://api.whatsapp.com/send/?phone=905013205358&text&type=phone_number&app_absent=0">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="https://api.whatsapp.com/send/?phone=905013205358&text&type=phone_number&app_absent=0">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
                         </div>
@@ -919,6 +932,8 @@
                 }
             });
         });
+
+        
     </script>
 </body>
 

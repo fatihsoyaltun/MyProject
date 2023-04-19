@@ -219,3 +219,26 @@ const updateCity = () => {
 
 updateCity();
 setInterval(updateCity, 5000);
+
+
+
+
+// responsive_open_btn.addEventListener("click", ()=>{
+//     // blogs_content_left.style.display = "block";
+//     alert("deneme")
+// });
+
+// responsive_close_btn.addEventListener("click", ()=>{
+//     blogs_content_left.style.display = "none";
+// });
+
+
+function openleft() {
+    let blogs_content_left = document.querySelector(".blogs_content_left");
+    blogs_content_left.style.display = "block";
+}
+
+function closeleft() {
+    let blogs_content_left = document.querySelector(".blogs_content_left");
+    blogs_content_left.style.display = "none";
+}
