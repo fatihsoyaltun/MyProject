@@ -31,7 +31,31 @@ html
         h1,h2,h3,h4,h5,h6
             font-family: "Jost",sans-serif
 
-    
+#progress
+    position: fixed
+    bottom: 20px
+    right: 10px
+    height: 55px
+    width: 55px
+    display: none
+    place-items: center
+    border-radius: 50%
+    //box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    z-index: 9999
+    #progress-value
+        display: block
+        height: calc(100% - 9px)
+        width: calc(100% - 9px)
+        background-color: $color_dark
+        border-radius: 50%
+        display: grid
+        place-items: center
+        font-size: 15px
+        color: $color_light
+
+
+
 .weather-content
     top: 5px
     display: flex

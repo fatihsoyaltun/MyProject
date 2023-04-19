@@ -21,6 +21,30 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   font-family: "Jost", sans-serif;
 }
 
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 55px;
+  width: 55px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+}
+#progress #progress-value {
+  display: block;
+  height: calc(100% - 9px);
+  width: calc(100% - 9px);
+  background-color: #091e3e;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  color: #eef9ff;
+}
+
 .weather-content {
   top: 5px;
   display: flex;
