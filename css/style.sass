@@ -3,6 +3,7 @@ $color_primary: #06a3da
 $color_secondary: #f57e57
 $color_light: #eef9ff
 $color_dark: #091e3e
+$color-mode-dark: #040303
 $carousel-bg: "/img/global-connections-background-social-media-banner.jpg"
 $backgroundonline: '/img/online.jpg'
 $backgroundistanbul: '/img/istanbul.jpg'
@@ -33,7 +34,31 @@ html
 
 
 .dark-mode-active
-    background-color: #000000 
+    background-color: $color-mode-dark !important
+    transition: background-color 1s ease-in-out
+    .weather-content
+        color: #D3DEDC
+    .h5bluehead,.h1head,.h2head,.p_text
+        color: #d3d3d3
+    .d-5
+        color: #d3d3d3
+        &:hover
+            color: #06a3da
+    .d-1
+        color: #d3d3d3
+    .mybutton
+        background-color: $color_dark
+        &:hover
+            color: #d3d3d3 !important
+        &::before
+            border-left: 2px solid #d3d3d3
+            border-top: 2px solid #d3d3d3
+        &::after
+            border-right: 2px solid #d3d3d3
+            border-bottom: 2px solid #d3d3d3
+    .teacher_video
+        background-color: $color-mode-dark !important
+        color: #d3d3d3 !important
 
 
 #progress
@@ -50,8 +75,8 @@ html
     z-index: 9999
     #progress-value
         display: block
-        height: calc(100% - 9px)
-        width: calc(100% - 9px)
+        height: calc(100% - 5px)
+        width: calc(100% - 5px)
         background-color: $color_dark
         border-radius: 50%
         display: grid
@@ -82,20 +107,25 @@ html
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
         background-color: $color_light
     .darkLight-mode_content
-        width: 200px !important
-        height: 200px !important
+        width: 150px !important
+        height: 150px !important
         .offcanvas-body
             padding: 0 !important
+            display: flex
+            align-items: center
+            justify-content: center
             .mode-choice
                 display: flex
-                justify-content: center 
-                align-items: center
+                justify-content: space-evenly 
+                align-items: flex-end
+                .modeActive
+                    background-color: $color_primary
                 .mode-choice-parent
                     display: flex
                     cursor: pointer
                     font-size: 18px
-                    width: 50px
-                    height: 50px
+                    width: 40px
+                    height: 40px
                     border-radius: 50%
                     align-items: center
                     justify-content: center
@@ -181,6 +211,7 @@ html
     top: 0
     .scrolled
         background-color: #fff !important
+        box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
         a
             color: $color_dark !important
         .drop-menu
@@ -207,8 +238,7 @@ html
         height: 80px
         padding: 0 30px
         // border-radius: 10px 10px
-        background-color: transparent
-        // box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
+        // background-color: transparent
         transition: 0.4s ease-in-out
         nav
             .menu-hero
