@@ -1,9 +1,9 @@
 
 //* Mode Choice start
 
-const lightMode = document.querySelector(".light-mode-choice-i");
-const darkMode = document.querySelector(".dark-mode-choice-i");
-const systemMode = document.querySelector(".system-mode-choice-i");
+const lightMode = document.querySelector(".lightMode");
+const darkMode = document.querySelector(".darkMode");
+const systemMode = document.querySelector(".systemMode");
 const items = document.querySelectorAll("body");
 
 // Determine user's system preference
@@ -16,15 +16,30 @@ if (prefersDarkMode) {
     lightMode.checked = true;
 }
 
+// function setModeActiveCookie() {
+//     const selectedMode = document.querySelector('.modeActive');
+//     if (selectedMode) {
+//         document.cookie = `modeActive=${selectedMode.classList[0]}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+//     }
+// }
+
 // Toggle modes when user clicks on options
 darkMode.addEventListener("click", function () {
     items.forEach((item) => item.classList.add("dark-mode-active"));
     document.cookie = "mode=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    darkMode.classList.add('modeActive');
+    lightMode.classList.remove('modeActive');
+    systemMode.classList.remove('modeActive');
+    //toggleDarkMode()
 });
 
 lightMode.addEventListener("click", function () {
     items.forEach((item) => item.classList.remove("dark-mode-active"));
     document.cookie = "mode=light; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    lightMode.classList.add('modeActive');
+    darkMode.classList.remove('modeActive');
+    systemMode.classList.remove('modeActive');
+    //toggleDarkMode()
 });
 
 systemMode.addEventListener("click", function () {
@@ -36,8 +51,28 @@ systemMode.addEventListener("click", function () {
         items.forEach((item) => item.classList.remove("dark-mode-active"));
         document.cookie = "mode=light; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     }
+    systemMode.classList.add('modeActive');
+    lightMode.classList.remove('modeActive');
+    darkMode.classList.remove('modeActive');
     window.location.reload();
 });
+
+// kullanıcının sistem tercihi 
+// const prefersDarkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+// function toggleDarkMode() {
+//     const darkModeActive = document.body.classList.contains("dark-mode-active");
+//     if (darkModeActive) {
+//         document.cookie = "mode=light; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+//     } else {
+//         document.cookie = "mode=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+//     }
+//     prefersDarkModeQuery.removeListener(toggleDarkMode);
+//     window.location.reload();
+// }
+
+// prefersDarkModeQuery.addListener(toggleDarkMode);
+
 
 // Check if the cookie exists and set the mode accordingly
 const modeCookie = document.cookie.split(";").find((c) => c.trim().startsWith("mode="));
@@ -51,38 +86,5 @@ if (modeCookie) {
         lightMode.checked = true;
     }
 }
-
-
-
-
-
-
-// const lightMode = document.querySelector(".light-mode-choice-i");
-// const darkMode = document.querySelector(".dark-mode-choice-i");
-// const items = document.querySelectorAll("body");
-
-// darkMode.addEventListener("click", function () {
-//     items.forEach((item) => item.classList.toggle("dark-mode-active"));
-//     if (document.body.classList.contains("dark-mode-active")) {
-//         document.cookie = "dark-mode=on; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-//     } else {
-//         document.cookie = "dark-mode=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-//     }
-// });
-
-// lightMode.addEventListener("click", function () {
-//     items.forEach((item) => item.classList.remove("dark-mode-active"));
-//     document.cookie = "dark-mode=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-// });
-
-// // Check if the cookie exists and set the dark mode accordingly
-// const darkModeCookie = document.cookie.split(";").find((c) => c.trim().startsWith("dark-mode="));
-// if (darkModeCookie && darkModeCookie.split("=")[1] === "on") {
-//     document.body.classList.add("dark-mode-active");
-// };
-
-
-
-
 
 //* Mode Choice end

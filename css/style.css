@@ -22,7 +22,41 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 
 .dark-mode-active {
-  background-color: #000000;
+  background-color: #040303 !important;
+  transition: background-color 1s ease-in-out;
+}
+.dark-mode-active .weather-content {
+  color: #D3DEDC;
+}
+.dark-mode-active .h5bluehead, .dark-mode-active .h1head, .dark-mode-active .h2head, .dark-mode-active .p_text {
+  color: #d3d3d3;
+}
+.dark-mode-active .d-5 {
+  color: #d3d3d3;
+}
+.dark-mode-active .d-5:hover {
+  color: #06a3da;
+}
+.dark-mode-active .d-1 {
+  color: #d3d3d3;
+}
+.dark-mode-active .mybutton {
+  background-color: #091e3e;
+}
+.dark-mode-active .mybutton:hover {
+  color: #d3d3d3 !important;
+}
+.dark-mode-active .mybutton::before {
+  border-left: 2px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+}
+.dark-mode-active .mybutton::after {
+  border-right: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+.dark-mode-active .teacher_video {
+  background-color: #040303 !important;
+  color: #d3d3d3 !important;
 }
 
 #progress {
@@ -39,8 +73,8 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 #progress #progress-value {
   display: block;
-  height: calc(100% - 9px);
-  width: calc(100% - 9px);
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
   background-color: #091e3e;
   border-radius: 50%;
   display: grid;
@@ -75,23 +109,29 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background-color: #eef9ff;
 }
 .cnvs-switcher-container .darkLight-mode_content {
-  width: 200px !important;
-  height: 200px !important;
+  width: 150px !important;
+  height: 150px !important;
 }
 .cnvs-switcher-container .darkLight-mode_content .offcanvas-body {
   padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cnvs-switcher-container .darkLight-mode_content .offcanvas-body .mode-choice {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.cnvs-switcher-container .darkLight-mode_content .offcanvas-body .mode-choice .modeActive {
+  background-color: #06a3da;
 }
 .cnvs-switcher-container .darkLight-mode_content .offcanvas-body .mode-choice .mode-choice-parent {
   display: flex;
   cursor: pointer;
   font-size: 18px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -188,6 +228,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 .header .scrolled {
   background-color: #fff !important;
+  box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2);
 }
 .header .scrolled a {
   color: #091e3e !important;
@@ -219,7 +260,6 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   align-items: center;
   height: 80px;
   padding: 0 30px;
-  background-color: transparent;
   transition: 0.4s ease-in-out;
 }
 .header .nav-menu nav .menu-hero {
