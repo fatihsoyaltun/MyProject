@@ -59,7 +59,23 @@ html
     .teacher_video
         background-color: $color-mode-dark !important
         color: #d3d3d3 !important
-
+    .scrolled
+        background-color: #040303 !important
+        box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
+        a
+            color: $color_light !important
+        .drop-menu
+            background-color: #040303 !important
+        .header-menu-toggle
+            color: #000 !important
+            .header-menu-text
+                color: #000 !important
+            .header-menu-icon
+                background-color: #000 !important
+                &::before
+                    background-color: #000 !important
+                &::after
+                    background-color: #000 !important
 
 #progress
     position: fixed
@@ -210,7 +226,7 @@ html
     position: sticky
     top: 0
     .scrolled
-        background-color: #fff !important
+        background-color: #fff
         box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
         a
             color: $color_dark !important
