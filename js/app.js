@@ -33,6 +33,7 @@ let $carousel = $('.main-carousel').flickity({
     // wrapAround: true
 });
 
+//AOS animation
 AOS.init();
 
 //loader
@@ -46,14 +47,25 @@ if (preloader) {
 //transparent navbar
 const navbar = document.querySelector('.nav-menu');
 const logo = document.querySelector('.neos-logo');
+const body = document.getElementsByTagName('body');
 
-window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 100) {
-        navbar.classList.add('scrolled');
-        logo.src = "/img/neos.PNG";
-    } else {
-        navbar.classList.remove('scrolled');
-        logo.src = "/img/neosLogo2.png"
+window.addEventListener('scroll', () => {
+    if(body[0].className == "dark-mode-active") {
+        if(window.pageYOffset > 100){
+            navbar.classList.add('scrolled');
+            logo.src="/img/neosLogo2.png";
+        }else {
+            navbar.classList.remove('scrolled');
+            logo.src = "/img/neosLogo2.png"
+        }
+    }else{
+        if (window.pageYOffset > 100) {
+            navbar.classList.add('scrolled');
+            logo.src = "/img/neos.PNG";
+        }else {
+            navbar.classList.remove('scrolled');
+            logo.src = "/img/neosLogo2.png"
+        }
     }
 });
 
@@ -165,38 +177,6 @@ prevBtn.addEventListener('click', () => {
 
 
 
-
-
-// const div = document.createElement('div');
-// let index = 0;
-
-// const updateCity = () => {
-//   fetch(`https://api.openweathermap.org/data/2.5/group?id=745044,323786,311046,750269&appid=65df515c830ddb1cd59ccbe33d79985e&units=metric&lang=tr`)
-//     .then(response => response.json())
-//     .then(data => {
-//       const cityData = data.list[index];
-//       const city = cityData.name;
-//       const temp = cityData.main.temp;
-//       const description = cityData.weather[0].description;
-//       const content = `${city}: ${temp}°C, ${description}`;
-//       div.innerHTML = content;
-//       index = (index + 1) % data.list.length;
-//     });
-// }
-
-// updateCity();
-// setInterval(updateCity, 5000);
-
-// document.body.appendChild(div);
-
-
-
-
-
-//   const url = 'https://api.openweathermap.org/data/2.5/';
-// const key = '65df515c830ddb1cd59ccbe33d79985e';
-
-
 const div = document.createElement('div');
 const weather_content = document.querySelector(".weather-content");
 
@@ -220,41 +200,6 @@ const updateCity = () => {
 updateCity();
 setInterval(updateCity, 5000);
 
-
-
-
-
-
-
-
-
-
-// function openleft() {
-//     let blogs_content_left = document.querySelector(".blogs_content_left");
-//     blogs_content_left.style.display = "flex";
-
-// }
-
-// function closeleft() {
-//     let blogs_content_left = document.querySelector(".blogs_content_left");
-//     blogs_content_left.style.display = "none";
-// }
-
-
-// function openleft() {
-//     let blogs_content_left = document.querySelector(".blogs_content_left");
-//     let blogs_content_right = document.querySelector(".blogs_content_right");
-
-//     if (blogs_content_left.style.display === "none") {
-//         blogs_content_left.style.display = "flex";
-//         blogs_content_right.classList.remove("col-12");
-//         blogs_content_right.classList.add("col-lg-8");
-//     } else {
-//         blogs_content_left.style.display = "none";
-//         blogs_content_right.classList.remove("col-lg-8");
-//         blogs_content_right.classList.add("col-12");
-//     }
-// }
 
 
 

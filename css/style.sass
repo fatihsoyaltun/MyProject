@@ -781,13 +781,13 @@ html
             margin-bottom: 1rem
 
 .owl-branches
-    .owl-carousel-branch
-    .owl-theme
-        .owl-dots 
-            .owl-dot 
-                span
-                    display: none
-    .owl-carousel 
+    // .owl-carousel-branch
+    // .owl-theme
+    //     .owl-dots 
+    //         .owl-dot 
+    //             span
+    //                 display: none
+    .owl-carousel
         .owl-nav
                 position: absolute
                 width: calc(100% + 52px)
@@ -797,6 +797,16 @@ html
                 display: flex
                 justify-content: space-between
                 z-index: 1
+                .owl-prev
+                    &::before
+                        content: "\f060"
+                        font-family: "Font Awesome 5 Free"
+                        font-weight: 900
+                .owl-next
+                    &::before
+                        content: "\f061"
+                        font-family: "Font Awesome 5 Free"
+                        font-weight: 900
                 button
                     position: relative
                     width: 46px
@@ -810,8 +820,38 @@ html
                     font-size: 22px
                     transition: 0.5s
                     font-weight: bold
-                .owl-next
-                .owl-prev
+                    span
+                        display: none
+// .owlTwo
+//     .owl-nav
+//         .owl-prev
+//             &::before
+//                 content: "\f060"
+//                 font-family: "Font Awesome 5 Free"
+//                 font-weight: 900
+//         .owl-next
+//             &::before
+//                 content: "\f061"
+//                 font-family: "Font Awesome 5 Free"
+//                 font-weight: 900
+//         button
+//             span
+//                 display: none
+.owl-carousel-branch
+    .owl-nav
+        .owl-prev
+            &::before
+                content: "\f060"
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
+        .owl-next
+            &::before
+                content: "\f061"
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
+        button
+            span
+                display: none
 
 .education_process
     margin-top: 3rem !important
@@ -913,10 +953,20 @@ html
             font-size: 22px
             transition: 0.5s
             font-weight: bold
+            span
+                display: none
         .owl-prev
             left: -30px !important
+            &::before
+                content: "\f060"
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
         .owl-next
             right: 22px
+            &::before
+                content: "\f061"
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
 
 .comment-process
     background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url($backgroundeducation_process) center center no-repeat
