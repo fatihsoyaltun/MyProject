@@ -1281,7 +1281,11 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background-color: #1b262c !important;
   transition: background-color 1s ease-in-out;
 }
+
 .dark-mode-active .left-rigth-dark-head {
+
+.dark-mode-active .drop-menu {
+
   background-color: #1b262c !important;
 }
 .dark-mode-active .weather-content {
