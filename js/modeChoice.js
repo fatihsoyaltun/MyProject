@@ -5,6 +5,7 @@ const lightMode = document.querySelector(".lightMode");
 const darkMode = document.querySelector(".darkMode");
 const systemMode = document.querySelector(".systemMode");
 const items = document.querySelectorAll("body");
+const navDark = document.querySelector("nav-menu");
 
 // Determine user's system preference
 const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -30,6 +31,11 @@ darkMode.addEventListener("click", function () {
     darkMode.classList.add('modeActive');
     lightMode.classList.remove('modeActive');
     systemMode.classList.remove('modeActive');
+    // window.addEventListener('scroll', function() {
+    //     if (window.pageYOffset > 100 && navDark.classList.contains("scrolled")) {
+    //         navDark.classList.remove("scrolled");
+    //     }
+    // });
     //toggleDarkMode()
 });
 

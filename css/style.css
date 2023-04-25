@@ -58,6 +58,31 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background-color: #040303 !important;
   color: #d3d3d3 !important;
 }
+.dark-mode-active .scrolled {
+  background-color: #040303 !important;
+  box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2);
+}
+.dark-mode-active .scrolled a {
+  color: #eef9ff !important;
+}
+.dark-mode-active .scrolled .drop-menu {
+  background-color: #040303 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle {
+  color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-text {
+  color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon {
+  background-color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon::before {
+  background-color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon::after {
+  background-color: #000 !important;
+}
 
 #progress {
   position: fixed;
@@ -227,7 +252,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   top: 0;
 }
 .header .scrolled {
-  background-color: #fff !important;
+  background-color: #fff;
   box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2);
 }
 .header .scrolled a {
