@@ -21,69 +21,6 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   font-family: "Jost", sans-serif;
 }
 
-.dark-mode-active {
-  background-color: #040303 !important;
-  transition: background-color 1s ease-in-out;
-}
-.dark-mode-active .weather-content {
-  color: #D3DEDC;
-}
-.dark-mode-active .h5bluehead, .dark-mode-active .h1head, .dark-mode-active .h2head, .dark-mode-active .p_text {
-  color: #d3d3d3;
-}
-.dark-mode-active .d-5 {
-  color: #d3d3d3;
-}
-.dark-mode-active .d-5:hover {
-  color: #06a3da;
-}
-.dark-mode-active .d-1 {
-  color: #d3d3d3;
-}
-.dark-mode-active .mybutton {
-  background-color: #091e3e;
-}
-.dark-mode-active .mybutton:hover {
-  color: #d3d3d3 !important;
-}
-.dark-mode-active .mybutton::before {
-  border-left: 2px solid #d3d3d3;
-  border-top: 2px solid #d3d3d3;
-}
-.dark-mode-active .mybutton::after {
-  border-right: 2px solid #d3d3d3;
-  border-bottom: 2px solid #d3d3d3;
-}
-.dark-mode-active .teacher_video {
-  background-color: #040303 !important;
-  color: #d3d3d3 !important;
-}
-.dark-mode-active .scrolled {
-  background-color: #040303 !important;
-  box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2);
-}
-.dark-mode-active .scrolled a {
-  color: #eef9ff !important;
-}
-.dark-mode-active .scrolled .drop-menu {
-  background-color: #040303 !important;
-}
-.dark-mode-active .scrolled .header-menu-toggle {
-  color: #000 !important;
-}
-.dark-mode-active .scrolled .header-menu-toggle .header-menu-text {
-  color: #000 !important;
-}
-.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon {
-  background-color: #000 !important;
-}
-.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon::before {
-  background-color: #000 !important;
-}
-.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon::after {
-  background-color: #000 !important;
-}
-
 #progress {
   position: fixed;
   bottom: 20px;
@@ -1338,6 +1275,94 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 .login-form .login-body .login-body-wrapper .loginRightSide .login-right-wrap .login-social-icons a:hover {
   color: #06a3da;
+}
+
+.dark-mode-active {
+  background-color: #1b262c !important;
+  transition: background-color 1s ease-in-out;
+}
+.dark-mode-active .weather-content {
+  color: #D3DEDC;
+}
+.dark-mode-active .h5bluehead, .dark-mode-active .h1head, .dark-mode-active .h2head, .dark-mode-active .p_text {
+  color: #d3d3d3;
+}
+.dark-mode-active .d-5 {
+  color: #d3d3d3;
+}
+.dark-mode-active .d-5:hover {
+  color: #06a3da;
+}
+.dark-mode-active .d-1 {
+  color: #d3d3d3;
+}
+.dark-mode-active .mybutton {
+  background-color: rgba(136, 136, 136, 0) !important;
+}
+.dark-mode-active .mybutton:hover {
+  color: #d3d3d3 !important;
+  background-color: rgba(238, 238, 238, 0) !important;
+}
+.dark-mode-active .mybutton::before {
+  border-left: 2px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+}
+.dark-mode-active .mybutton::after {
+  border-right: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+.dark-mode-active .teacher_video {
+  background-color: #1b262c !important;
+  color: #d3d3d3 !important;
+}
+.dark-mode-active .scrolled {
+  background-color: #1b262c !important;
+  box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2);
+}
+.dark-mode-active .scrolled a {
+  color: #eef9ff !important;
+}
+.dark-mode-active .scrolled .drop-menu {
+  background-color: #1b262c !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle {
+  color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-text {
+  color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon {
+  background-color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon::before {
+  background-color: #000 !important;
+}
+.dark-mode-active .scrolled .header-menu-toggle .header-menu-icon::after {
+  background-color: #000 !important;
+}
+.dark-mode-active .search-group .bg-primary {
+  background-color: #1b262c !important;
+  border: 1px solid gray;
+}
+.dark-mode-active .search-group .bg-primary .input-group button {
+  background-color: #1b262c !important;
+  border: 1px solid gray !important;
+}
+.dark-mode-active .footer-bottom-container {
+  border: 1px solid gray;
+  color: white !important;
+  background-color: #1b262c !important;
+}
+.dark-mode-active .dark-mode-teacher-video .row .col-lg-3 .teacher_video {
+  box-shadow: none !important;
+  border: 1px solid gray !important;
+  border-radius: 0 !important;
+}
+.dark-mode-active .carousel-flickity .main-carousel .carousel-cell {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/global-connections-background-social-media-banner.jpg") center center/cover no-repeat;
+}
+.dark-mode-active .education_process {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/aerial-view-business-team.jpg") center center/cover no-repeat;
 }
 
 @keyframes tracking-in-expand {

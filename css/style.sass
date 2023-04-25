@@ -3,7 +3,7 @@ $color_primary: #06a3da
 $color_secondary: #f57e57
 $color_light: #eef9ff
 $color_dark: #091e3e
-$color-mode-dark: #040303
+$color-mode-dark: #1b262c
 $carousel-bg: "/img/global-connections-background-social-media-banner.jpg"
 $backgroundonline: '/img/online.jpg'
 $backgroundistanbul: '/img/istanbul.jpg'
@@ -33,49 +33,7 @@ html
             font-family: "Jost",sans-serif
 
 
-.dark-mode-active
-    background-color: $color-mode-dark !important
-    transition: background-color 1s ease-in-out
-    .weather-content
-        color: #D3DEDC
-    .h5bluehead,.h1head,.h2head,.p_text
-        color: #d3d3d3
-    .d-5
-        color: #d3d3d3
-        &:hover
-            color: #06a3da
-    .d-1
-        color: #d3d3d3
-    .mybutton
-        background-color: $color_dark
-        &:hover
-            color: #d3d3d3 !important
-        &::before
-            border-left: 2px solid #d3d3d3
-            border-top: 2px solid #d3d3d3
-        &::after
-            border-right: 2px solid #d3d3d3
-            border-bottom: 2px solid #d3d3d3
-    .teacher_video
-        background-color: $color-mode-dark !important
-        color: #d3d3d3 !important
-    .scrolled
-        background-color: #040303 !important
-        box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
-        a
-            color: $color_light !important
-        .drop-menu
-            background-color: #040303 !important
-        .header-menu-toggle
-            color: #000 !important
-            .header-menu-text
-                color: #000 !important
-            .header-menu-icon
-                background-color: #000 !important
-                &::before
-                    background-color: #000 !important
-                &::after
-                    background-color: #000 !important
+
 
 #progress
     position: fixed
@@ -1189,6 +1147,77 @@ html
                             &:hover
                                 // background-color: $color7
                                 color: #06a3da
+
+.dark-mode-active
+    background-color: $color-mode-dark !important
+    transition: background-color 1s ease-in-out
+    .weather-content
+        color: #D3DEDC
+    .h5bluehead,.h1head,.h2head,.p_text
+        color: #d3d3d3
+    .d-5
+        color: #d3d3d3
+        &:hover
+            color: #06a3da
+    .d-1
+        color: #d3d3d3
+    .mybutton
+        background-color: #88888800 !important
+        &:hover
+            color: #d3d3d3 !important
+            background-color: #eeeeee00 !important
+        &::before
+            border-left: 2px solid #d3d3d3
+            border-top: 2px solid #d3d3d3
+        &::after
+            border-right: 2px solid #d3d3d3
+            border-bottom: 2px solid #d3d3d3
+    .teacher_video
+        background-color: $color-mode-dark !important
+        color: #d3d3d3 !important
+    .scrolled
+        background-color: $color-mode-dark !important
+        box-shadow: 0 5px 10px 0 rgba(26, 47, 51, 0.2)
+        a
+            color: $color_light !important
+        .drop-menu
+            background-color: $color-mode-dark !important
+        .header-menu-toggle
+            color: #000 !important
+            .header-menu-text
+                color: #000 !important
+            .header-menu-icon
+                background-color: #000 !important
+                &::before
+                    background-color: #000 !important
+                &::after
+                    background-color: #000 !important
+    .search-group
+        .bg-primary
+            background-color: $color-mode-dark !important
+            border: 1px solid gray
+            .input-group
+                button
+                    background-color: $color-mode-dark !important
+                    border: 1px solid gray !important
+    .footer-bottom-container
+        border: 1px solid gray
+        color: white !important
+        background-color: $color-mode-dark  !important
+    .dark-mode-teacher-video
+        .row
+            .col-lg-3
+                .teacher_video
+                    box-shadow: none !important
+                    border: 1px solid gray !important
+                    border-radius: 0 !important
+    .carousel-flickity
+        .main-carousel
+            .carousel-cell
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url($carousel-bg) center center / cover no-repeat
+    .education_process
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url($backgroundeducation_process) center center / cover no-repeat 
+
 
 //keyframes
 @keyframes tracking-in-expand
