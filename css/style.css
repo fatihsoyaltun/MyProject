@@ -1281,6 +1281,9 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   background-color: #1b262c !important;
   transition: background-color 1s ease-in-out;
 }
+.dark-mode-active .left-rigth-dark-head {
+  background-color: #1b262c !important;
+}
 .dark-mode-active .weather-content {
   color: #D3DEDC;
 }
@@ -1363,6 +1366,17 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 }
 .dark-mode-active .education_process {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/aerial-view-business-team.jpg") center center/cover no-repeat;
+}
+.dark-mode-active .hero-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/aerial-view-business-team.jpg") center center/cover no-repeat;
+  background-size: cover;
+}
+.dark-mode-active .price-item .bg-light {
+  background-color: #1b262c !important;
+  border: 1px solid gray !important;
+}
+.dark-mode-active .price-item .mybutton {
+  background-color: #1b262c !important;
 }
 
 @keyframes tracking-in-expand {
