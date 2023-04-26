@@ -436,7 +436,8 @@ html
             .caro-text,.caro-text2
                 margin: 0
                 padding: 0
-                font-size: 1.5rem
+                font-size: 2rem
+                font-family: "Jost",sans-serif !important
         .flickity-button
             background: #333
             &:hover
@@ -1149,10 +1150,31 @@ html
                                 color: #06a3da
 
 .dark-mode-active
-    background-color: $color-mode-dark !important
+    // background-color: $color-mode-dark !important
+    background: rgb(46,65,75)
+    background: radial-gradient(circle, rgba(46,65,75,1) 0%, rgba(0,0,0,1) 100%) !important
     transition: background-color 1s ease-in-out
     .left-rigth-dark-head
-        background-color: $color-mode-dark !important
+        // background-color: $color-mode-dark !important
+        background: rgb(46,65,75)
+        background: radial-gradient(circle, rgba(46,65,75,1) 0%, rgba(0,0,0,1) 100%)
+        .header-up-left
+            &::after
+                background: black !important
+                border-right: 1px solid white !important
+            .header-up-left-text
+                background-color: black !important
+        .header-up-right
+            &::before
+                background-color: black !important
+                border-left: 1px solid white !important
+            .header-up-right-text
+                background-color: black !important
+                .textOne
+                    background-color: black !important
+                .textTwo
+                    background-color: black !important
+
     .drop-menu
         background-color: $color-mode-dark !important
     .weather-content
