@@ -1431,6 +1431,25 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 .dark-mode-active .login-body-wrapper .loginRightSide .login-social-icons a {
   background-color: #fff !important;
 }
+.dark-mode-active .dark-contact-us .bg-light {
+  background-color: #1b262c !important;
+}
+.dark-mode-active .dark-contact-us .bg-light .section-title {
+  color: white !important;
+}
+.dark-mode-active .dark-contact-us .bg-light h5 {
+  color: white !important;
+}
+.dark-mode-active .dark-contact-us input {
+  color: white !important;
+}
+.dark-mode-active .comment-process {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/aerial-view-business-team.jpg") center center no-repeat;
+}
+.dark-mode-active .about_us .owlTwo .item .card {
+  background-color: #1b262c !important;
+  border: 1px solid gray !important;
+}
 
 @keyframes tracking-in-expand {
   0% {
